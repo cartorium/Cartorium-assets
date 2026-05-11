@@ -1,0 +1,93 @@
+[
+  {
+    "id": "Flubs-Ferry",
+    "name": "Flubs Ferry",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Flubs-Ferry_thumb.webp",
+    "jsonFile": "Flubs Ferry.json",
+    "imageFile": "Flubs Ferry.jpg"
+  },
+  {
+    "id": "the-riftwatch-monument",
+    "name": "The Riftwatch Monument",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Riftwatch-Monument_thumb.webp",
+    "jsonFile": "Riftwatch Monument.json",
+    "imageFile": "Riftwatch Monument.jpg"
+  },
+  {
+    "id": "hunters-guild-hall",
+    "name": "Hunters Guild Hall",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Hunters-Guild-Hall_thumb.webp",
+    "jsonFile": "Hunters Guild Hall.json",
+    "imageFile": "Hunters Guild Hall.jpg"
+  },
+  {
+    "id": "Sacre-Mal",
+    "name": "Sacre Mal",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Sacre-Mal_thumb.webp",
+    "jsonFile": "Sacre Mal.json",
+    "imageFile": "Sacre Mal.jpg"
+  },
+  {
+    "id": "Deathdome",
+    "name": "Deathdome",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Deathdome_thumb.webp",
+    "jsonFile": "Deathdome.json",
+    "imageFile": "Deathdome.jpg"
+  },
+  {
+    "id": "Necropolis",
+    "name": "Necropolis",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Necropolis_thumb.webp",
+    "jsonFile": "Necropolis.json",
+    "imageFile": "Necropolis.jpg"
+  },
+  {
+    "id": "Thieves-Guild",
+    "name": "Thieves Guild",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Thieves-Guild_thumb.webp",
+    "jsonFile": "Thieves Guild.json",
+    "imageFile": "Thieves Guild.jpg"
+  },
+  {
+    "id": "Crimson-lounge",
+    "name": "Crimson Lounge",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Crimson-Lounge_thumb.webp",
+    "jsonFile": "Crimson Lounge.json",
+    "imageFile": "Crimson Lounge.jpg"
+  },
+  {
+    "id": "The-Solar-Keep",
+    "name": "The Solar Keep",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Solar-Keep_thumb.webp",
+    "jsonFile": "The Solar Keep.json",
+    "imageFile": "The Solar Keep.jpg"
+  },
+  {
+    "id": "The-Shadow-Central",
+    "name": "The Shadow Central",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/SC_thumb.webp",
+    "jsonFile": "Shadow Central.json",
+    "imageFile": "Shadow Markets.jpg"
+  },
+  {
+    "id": "Carrion-Carnival",
+    "name": "Carrion Carnival",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Carrion-Carnival_thumb.webp",
+    "jsonFile": "Carrion Carnival.json",
+    "imageFile": "Carrion Carnival.jpg"
+  },
+  {
+    "id": "warcamp",
+    "name": "Warcamp",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Warcamp_thumb.webp",
+    "jsonFile": "Warcamp.json",
+    "imageFile": "Warcamp.jpg"
+  },
+  {
+    "id": "Amphail-Mountain-Town",
+    "name": "Amphail Mountain Town",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Amphail-Mountain-Town_thumb.webp",
+    "jsonFile": "Amphail Mountain Town.json",
+    "imageFile": "Amphail Mountain Town.jpg"
+  }
+]
