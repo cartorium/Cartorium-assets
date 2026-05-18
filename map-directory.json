@@ -1,93 +1,122 @@
 [
   {
-    "id": "Flubs-Ferry",
-    "name": "Flubs Ferry",
-    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Flubs-Ferry_thumb.webp",
-    "jsonFile": "Flubs Ferry.json",
-    "imageFile": "Flubs Ferry.jpg"
-  },
-  {
-    "id": "the-riftwatch-monument",
-    "name": "The Riftwatch Monument",
-    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Riftwatch-Monument_thumb.webp",
-    "jsonFile": "Riftwatch Monument.json",
-    "imageFile": "Riftwatch Monument.jpg"
-  },
-  {
-    "id": "hunters-guild-hall",
-    "name": "Hunters Guild Hall",
-    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Hunters-Guild-Hall_thumb.webp",
-    "jsonFile": "Hunters Guild Hall.json",
-    "imageFile": "Hunters Guild Hall.jpg"
+    "id": "War-Camp",
+    "name": "War Camp",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/War-Camp_thumb.webp",
+    "jsonFile": "War Camp.json",
+    "imageFile": "War Camp.jpg",
+    "image4kFile": "War Camp 4k.jpg"
   },
   {
     "id": "Sacre-Mal",
-    "name": "Sacre Mal",
+    "name": "The Sacre Mal",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Sacre-Mal_thumb.webp",
-    "jsonFile": "Sacre Mal.json",
-    "imageFile": "Sacre Mal.jpg"
+    "jsonFile": "The Sacre Mal.json",
+    "imageFile": "The Sacre Mal.jpg",
+    "image4kFile": "The Sacre Mal 4k.jpg"
   },
   {
-    "id": "Deathdome",
-    "name": "Deathdome",
-    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Deathdome_thumb.webp",
-    "jsonFile": "Deathdome.json",
-    "imageFile": "Deathdome.jpg"
+    "id": "The-Red-Hand",
+    "name": "The Red Hand",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/The-Red-Hand_thumb.webp",
+    "jsonFile": "The Red Hand.json",
+    "imageFile": "The Red Hand.jpg",
+    "image4kFile": "The Red Hand 4k.jpg"
+  },
+  {
+    "id": "Solar-Keep",
+    "name": "Solar Keep",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Solar-Keep_thumb.webp",
+    "jsonFile": "Solar Keep.json",
+    "imageFile": "Solar Keep.jpg",
+    "image4kFile": "Solar Keep 4k.jpg"
+  },
+  {
+    "id": "Scarecrows-Watch",
+    "name": "Scarecrows Watch",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Scarecrows-Watch_thumb.webp",
+    "jsonFile": "Scarecrows Watch.json",
+    "imageFile": "Scarecrows Watch.jpg",
+    "image4kFile": "Scarecrows Watch 4k.jpg"
   },
   {
     "id": "Necropolis",
     "name": "Necropolis",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Necropolis_thumb.webp",
     "jsonFile": "Necropolis.json",
-    "imageFile": "Necropolis.jpg"
+    "imageFile": "Necropolis.jpg",
+    "image4kFile": "Necropolis 4k.jpg"
   },
   {
-    "id": "Thieves-Guild",
-    "name": "Thieves Guild",
-    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Thieves-Guild_thumb.webp",
-    "jsonFile": "Thieves Guild.json",
-    "imageFile": "Thieves Guild.jpg"
+    "id": "Hunters-Guild-Hall",
+    "name": "Hunters Guild Hall",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Hunters-Guild-Hall_thumb.webp",
+    "jsonFile": "Hunters Guild Hall.json",
+    "imageFile": "Hunters Guild Hall.jpg",
+    "image4kFile": "Hunters Guild Hall 4k.jpg"
   },
   {
-    "id": "Crimson-lounge",
+    "id": "Deathdome",
+    "name": "Deathdome",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Deathdome_thumb.webp",
+    "jsonFile": "Deathdome.json",
+    "imageFile": "Deathdome.jpg",
+    "image4kFile": "Deathdome 4k.jpg"
+  },
+  {
+    "id": "Crimson-Lounge",
     "name": "Crimson Lounge",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Crimson-Lounge_thumb.webp",
     "jsonFile": "Crimson Lounge.json",
-    "imageFile": "Crimson Lounge.jpg"
-  },
-  {
-    "id": "The-Solar-Keep",
-    "name": "The Solar Keep",
-    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Solar-Keep_thumb.webp",
-    "jsonFile": "The Solar Keep.json",
-    "imageFile": "The Solar Keep.jpg"
-  },
-  {
-    "id": "The-Shadow-Central",
-    "name": "The Shadow Central",
-    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/SC_thumb.webp",
-    "jsonFile": "Shadow Central.json",
-    "imageFile": "Shadow Markets.jpg"
+    "imageFile": "Crimson Lounge.jpg",
+    "image4kFile": "Crimson Lounge 4k.jpg"
   },
   {
     "id": "Carrion-Carnival",
     "name": "Carrion Carnival",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Carrion-Carnival_thumb.webp",
     "jsonFile": "Carrion Carnival.json",
-    "imageFile": "Carrion Carnival.jpg"
+    "imageFile": "Carrion Carnival.jpg",
+    "image4kFile": "Carrion Carnival 4k.jpg"
   },
   {
-    "id": "warcamp",
-    "name": "Warcamp",
-    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Warcamp_thumb.webp",
-    "jsonFile": "Warcamp.json",
-    "imageFile": "Warcamp.jpg"
+    "id": "battlebridge",
+    "name": "Battlebridge",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/battlebridge_thumb.webp",
+    "jsonFile": "battlebridge.json",
+    "imageFile": "battlebridge.jpg",
+    "image4kFile": "battlebridge 4k.jpg"
   },
   {
     "id": "Amphail-Mountain-Town",
     "name": "Amphail Mountain Town",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Amphail-Mountain-Town_thumb.webp",
     "jsonFile": "Amphail Mountain Town.json",
-    "imageFile": "Amphail Mountain Town.jpg"
+    "imageFile": "Amphail Mountain Town.jpg",
+    "image4kFile": "Amphail Mountain Town 4k.jpg"
+  },
+  {
+    "id": "Flubs-Ferry",
+    "name": "Flubs Ferry",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Flubs-Ferry_thumb.webp",
+    "jsonFile": "Flubs Ferry.json",
+    "imageFile": "Flubs Ferry.jpg",
+    "image4kFile": "Flubs Ferry 4k.jpg"
+  },
+  {
+    "id": "Flubs-Ferry-at-sea",
+    "name": "Flubs Ferry (At Sea)",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Flubs-Ferry-at-sea_thumb.webp",
+    "jsonFile": "Flubs Ferry at sea.json",
+    "imageFile": "Flubs Ferry at sea.jpg",
+    "image4kFile": "Flubs Ferry at sea 4k.jpg"
+  },
+  {
+    "id": "Mystic-Camp",
+    "name": "Mystic Camp",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Mystic-Camp_thumb.webp",
+    "jsonFile": "Mystic Camp.json",
+    "imageFile": "Mystic Camp.jpg",
+    "image4kFile": "Mystic Camp 4k.jpg"
   }
 ]
