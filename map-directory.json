@@ -70,6 +70,7 @@
     "jsonFile": "Crimson Lounge.json",
     "imageFile": "Crimson Lounge.jpg",
     "image4kFile": "Crimson Lounge 4k.jpg"
+    "featured": true
   },
   {
     "id": "Carrion-Carnival",
