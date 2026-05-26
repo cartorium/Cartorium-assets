@@ -4,7 +4,8 @@
     "name": "War Camp",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/War-Camp_thumb.webp",
     "description": "A fortified encampment ready for military strategy and large-scale skirmishes.",
-    "featured": true,
+    "status": "latest",
+    "progress": 0,
     "premiumJson": "War Camp.json",
     "premiumImage": "War Camp.jpg",
     "image4k": "War Camp 4k.jpg"
@@ -14,16 +15,31 @@
     "name": "The Sacre Mal",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Sacre-Mal_thumb.webp",
     "description": "A dark and foreboding location, perfect for unearthing ancient secrets.",
-    "featured": true,
+    "status": "wip",
+    "progress": 85,
     "premiumJson": "The Sacre Mal.json",
     "premiumImage": "The Sacre Mal.jpg",
     "image4k": "The Sacre Mal 4k.jpg"
+  },
+  {
+    "id": "Crimson-Lounge",
+    "name": "Crimson Lounge",
+    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Crimson-Lounge_thumb.webp",
+    "description": "A lavish but dangerous establishment where secrets are traded over fine wine.",
+    "status": "popular",
+    "progress": 0,
+    "pdfUrl": "https://cartorium.github.io/Cartorium-assets/Thieves%20Den%20Written%20Module%20(2).pdf",
+    "premiumJson": "Crimson Lounge.json",
+    "premiumImage": "Crimson Lounge.jpg",
+    "image4k": "Crimson Lounge 4k.jpg"
   },
   {
     "id": "The-Red-Hand",
     "name": "The Red Hand",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/The-Red-Hand_thumb.webp",
     "description": "A highly detailed battlemap ready for your campaign.",
+    "status": "normal",
+    "progress": 0,
     "premiumJson": "The Red Hand.json",
     "premiumImage": "The Red Hand.jpg",
     "image4k": "The Red Hand 4k.jpg"
@@ -33,6 +49,8 @@
     "name": "Solar Keep",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Solar-Keep_thumb.webp",
     "description": "A radiant stronghold harnessing the power of the sun.",
+    "status": "normal",
+    "progress": 0,
     "premiumJson": "Solar Keep.json",
     "premiumImage": "Solar Keep.jpg",
     "image4k": "Solar Keep 4k.jpg"
@@ -42,6 +60,8 @@
     "name": "Scarecrows Watch",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Scarecrows-Watch_thumb.webp",
     "description": "An eerie, overgrown field watched over by silent, unsettling sentinels.",
+    "status": "normal",
+    "progress": 0,
     "premiumJson": "Scarecrows Watch.json",
     "premiumImage": "Scarecrows Watch.jpg",
     "image4k": "Scarecrows Watch 4k.jpg"
@@ -51,6 +71,8 @@
     "name": "Necropolis",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Necropolis_thumb.webp",
     "description": "A sprawling city of the dead, filled with ancient crypts and lingering spirits.",
+    "status": "normal",
+    "progress": 0,
     "premiumJson": "Necropolis.json",
     "premiumImage": "Necropolis.jpg",
     "image4k": "Necropolis 4k.jpg"
@@ -60,6 +82,8 @@
     "name": "Hunters Guild Hall",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Hunters-Guild-Hall_thumb.webp",
     "description": "A bustling lodge decorated with trophies from legendary beasts and monstrosities.",
+    "status": "normal",
+    "progress": 0,
     "premiumJson": "Hunters Guild Hall.json",
     "premiumImage": "Hunters Guild Hall.jpg",
     "image4k": "Hunters Guild Hall 4k.jpg"
@@ -69,26 +93,19 @@
     "name": "Deathdome",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Deathdome_thumb.webp",
     "description": "A brutal, enclosed arena where champions fight for glory and survival.",
+    "status": "normal",
+    "progress": 0,
     "premiumJson": "Deathdome.json",
     "premiumImage": "Deathdome.jpg",
     "image4k": "Deathdome 4k.jpg"
-  },
-  {
-    "id": "Crimson-Lounge",
-    "name": "Crimson Lounge",
-    "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Crimson-Lounge_thumb.webp",
-    "description": "A lavish but dangerous establishment where secrets are traded over fine wine.",
-    "featured": true,
-    "pdfUrl": "https://cartorium.github.io/Cartorium-assets/Thieves%20Den%20Written%20Module%20(2).pdf",
-    "premiumJson": "Crimson Lounge.json",
-    "premiumImage": "Crimson Lounge.jpg",
-    "image4k": "Crimson Lounge 4k.jpg"
   },
   {
     "id": "Carrion-Carnival",
     "name": "Carrion Carnival",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Carrion-Carnival_thumb.webp",
     "description": "A macabre festival filled with twisted games and dark performances.",
+    "status": "normal",
+    "progress": 0,
     "premiumJson": "Carrion Carnival.json",
     "premiumImage": "Carrion Carnival.jpg",
     "image4k": "Carrion Carnival 4k.jpg"
@@ -98,6 +115,8 @@
     "name": "Battlebridge",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/battlebridge_thumb.webp",
     "description": "A strategic river crossing constructed of sturdy wood and stone, forming a vital chokepoint.",
+    "status": "normal",
+    "progress": 0,
     "premiumJson": "battlebridge.json",
     "premiumImage": "battlebridge.jpg",
     "image4k": "battlebridge 4k.jpg"
@@ -107,6 +126,8 @@
     "name": "Amphail Mountain Town",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Amphail-Mountain-Town_thumb.webp",
     "description": "A chilly, high-altitude settlement nestled among jagged peaks.",
+    "status": "normal",
+    "progress": 0,
     "premiumJson": "Amphail Mountain Town.json",
     "premiumImage": "Amphail Mountain Town.jpg",
     "image4k": "Amphail Mountain Town 4k.jpg"
@@ -116,6 +137,8 @@
     "name": "Flubs Ferry",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Flubs-Ferry_thumb.webp",
     "description": "A quiet riverside crossing, complete with docks and a sturdy transport boat.",
+    "status": "normal",
+    "progress": 0,
     "premiumJson": "Flubs Ferry.json",
     "premiumImage": "Flubs Ferry.jpg",
     "image4k": "Flubs Ferry 4k.jpg"
@@ -125,6 +148,8 @@
     "name": "Flubs Ferry (At Sea)",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Flubs-Ferry-at-sea_thumb.webp",
     "description": "The ferry detached and navigating the open, turbulent waters.",
+    "status": "normal",
+    "progress": 0,
     "premiumJson": "Flubs Ferry at sea.json",
     "premiumImage": "Flubs Ferry at sea.jpg",
     "image4k": "Flubs Ferry at sea 4k.jpg"
@@ -134,6 +159,8 @@
     "name": "Mystic Camp",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Mystic-Camp_thumb.webp",
     "description": "A secluded gathering place crackling with arcane energy and magical wards.",
+    "status": "normal",
+    "progress": 0,
     "premiumJson": "Mystic Camp.json",
     "premiumImage": "Mystic Camp.jpg",
     "image4k": "Mystic Camp 4k.jpg"
