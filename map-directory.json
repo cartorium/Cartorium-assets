@@ -3,33 +3,17 @@
     "latest": {
       "id": "Hunters-Guild-Hall"
     },
-
     "wip": {
       "id": "Solar-Keep",
       "progress": 50,
-
       "summary": "A radiant fortress powered by ancient solar machinery and divine fire.",
-
       "features": [
-        {
-          "icon": "fa-sun",
-          "label": "Solar Forge Core"
-        },
-        {
-          "icon": "fa-fire",
-          "label": "Animated Heat Vents"
-        },
-        {
-          "icon": "fa-chess-rook",
-          "label": "Multi-Level Keep"
-        },
-        {
-          "icon": "fa-cloud-bolt",
-          "label": "Storm Ritual Chamber"
-        }
+        { "icon": "fa-sun", "label": "Solar Forge Core" },
+        { "icon": "fa-fire", "label": "Animated Heat Vents" },
+        { "icon": "fa-chess-rook", "label": "Multi-Level Keep" },
+        { "icon": "fa-cloud-bolt", "label": "Storm Ritual Chamber" }
       ]
     },
-
     "popular": {
       "id": "Deathdome"
     }
@@ -41,9 +25,29 @@
       "name": "War Camp",
       "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/War-Camp_thumb.webp",
       "description": "A fortified encampment ready for military strategy and large-scale skirmishes.",
+      
+      "image4k": "War Camp 4k.jpg",
+      "image8k": "War Camp 8k.jpg",
+      
       "premiumJson": "War Camp.json",
       "premiumImage": "War Camp.jpg",
-      "image4k": "War Camp 4k.jpg"
+      
+      "pdfUrl": "https://cartorium.github.io/Cartorium-assets/War-Camp-Guide.pdf",
+      "tokens": "War-Camp-Tokens.zip",
+      
+      "variants": [
+        {
+          "name": "Night Assault (8K Unwalled)",
+          "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/War-Camp-Night_thumb.webp",
+          "image": "War Camp Night 8k.jpg"
+        },
+        {
+          "name": "Night Assault (Premium Scene)",
+          "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/War-Camp-Night_thumb.webp",
+          "json": "War Camp Night.json",
+          "image": "War Camp Night.jpg"
+        }
+      ]
     },
 
     {
@@ -65,126 +69,6 @@
       "premiumJson": "Crimson Lounge.json",
       "premiumImage": "Crimson Lounge.jpg",
       "image4k": "Crimson Lounge 4k.jpg"
-    },
-
-    {
-      "id": "The-Red-Hand",
-      "name": "The Red Hand",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/The-Red-Hand_thumb.webp",
-      "description": "A highly detailed battlemap ready for your campaign.",
-      "premiumJson": "The Red Hand.json",
-      "premiumImage": "The Red Hand.jpg",
-      "image4k": "The Red Hand 4k.jpg"
-    },
-
-    {
-      "id": "Solar-Keep",
-      "name": "Solar Keep",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Solar-Keep_thumb.webp",
-      "description": "A radiant stronghold harnessing the power of the sun.",
-      "premiumJson": "Solar Keep.json",
-      "premiumImage": "Solar Keep.jpg",
-      "image4k": "Solar Keep 4k.jpg"
-    },
-
-    {
-      "id": "Scarecrows-Watch",
-      "name": "Scarecrows Watch",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Scarecrows-Watch_thumb.webp",
-      "description": "An eerie, overgrown field watched over by silent, unsettling sentinels.",
-      "premiumJson": "Scarecrows Watch.json",
-      "premiumImage": "Scarecrows Watch.jpg",
-      "image4k": "Scarecrows Watch 4k.jpg"
-    },
-
-    {
-      "id": "Necropolis",
-      "name": "Necropolis",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Necropolis_thumb.webp",
-      "description": "A sprawling city of the dead, filled with ancient crypts and lingering spirits.",
-      "premiumJson": "Necropolis.json",
-      "premiumImage": "Necropolis.jpg",
-      "image4k": "Necropolis 4k.jpg"
-    },
-
-    {
-      "id": "Hunters-Guild-Hall",
-      "name": "Hunters Guild Hall",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Hunters-Guild-Hall_thumb.webp",
-      "description": "A bustling lodge decorated with trophies from legendary beasts and monstrosities.",
-      "premiumJson": "Hunters Guild Hall.json",
-      "premiumImage": "Hunters Guild Hall.jpg",
-      "image4k": "Hunters Guild Hall 4k.jpg"
-    },
-
-    {
-      "id": "Deathdome",
-      "name": "Deathdome",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Deathdome_thumb.webp",
-      "description": "A brutal, enclosed arena where champions fight for glory and survival.",
-      "premiumJson": "Deathdome.json",
-      "premiumImage": "Deathdome.jpg",
-      "image4k": "Deathdome 4k.jpg"
-    },
-
-    {
-      "id": "Carrion-Carnival",
-      "name": "Carrion Carnival",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Carrion-Carnival_thumb.webp",
-      "description": "A macabre festival filled with twisted games and dark performances.",
-      "premiumJson": "Carrion Carnival.json",
-      "premiumImage": "Carrion Carnival.jpg",
-      "image4k": "Carrion Carnival 4k.jpg"
-    },
-
-    {
-      "id": "battlebridge",
-      "name": "Battlebridge",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/battlebridge_thumb.webp",
-      "description": "A strategic river crossing constructed of sturdy wood and stone, forming a vital chokepoint.",
-      "premiumJson": "battlebridge.json",
-      "premiumImage": "battlebridge.jpg",
-      "image4k": "battlebridge 4k.jpg"
-    },
-
-    {
-      "id": "Amphail-Mountain-Town",
-      "name": "Amphail Mountain Town",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Amphail-Mountain-Town_thumb.webp",
-      "description": "A chilly, high-altitude settlement nestled among jagged peaks.",
-      "premiumJson": "Amphail Mountain Town.json",
-      "premiumImage": "Amphail Mountain Town.jpg",
-      "image4k": "Amphail Mountain Town 4k.jpg"
-    },
-
-    {
-      "id": "Flubs-Ferry",
-      "name": "Flubs Ferry",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Flubs-Ferry_thumb.webp",
-      "description": "A quiet riverside crossing, complete with docks and a sturdy transport boat.",
-      "premiumJson": "Flubs Ferry.json",
-      "premiumImage": "Flubs Ferry.jpg",
-      "image4k": "Flubs Ferry 4k.jpg"
-    },
-
-    {
-      "id": "Flubs-Ferry-at-sea",
-      "name": "Flubs Ferry (At Sea)",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Flubs-Ferry-at-sea_thumb.webp",
-      "description": "The ferry detached and navigating the open, turbulent waters.",
-      "premiumJson": "Flubs Ferry at sea.json",
-      "premiumImage": "Flubs Ferry at sea.jpg",
-      "image4k": "Flubs Ferry at sea 4k.jpg"
-    },
-
-    {
-      "id": "Mystic-Camp",
-      "name": "Mystic Camp",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Mystic-Camp_thumb.webp",
-      "description": "A secluded gathering place crackling with arcane energy and magical wards.",
-      "premiumJson": "Mystic Camp.json",
-      "premiumImage": "Mystic Camp.jpg",
-      "image4k": "Mystic Camp 4k.jpg"
     }
   ]
 }
