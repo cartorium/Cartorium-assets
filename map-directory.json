@@ -4,6 +4,7 @@
     "name": "War Camp",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/War-Camp_thumb.webp",
     "description": "A fortified encampment ready for military strategy and large-scale skirmishes.",
+    "featured": true,
     "premiumJson": "War Camp.json",
     "premiumImage": "War Camp.jpg",
     "image4k": "War Camp 4k.jpg"
@@ -13,6 +14,7 @@
     "name": "The Sacre Mal",
     "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Sacre-Mal_thumb.webp",
     "description": "A dark and foreboding location, perfect for unearthing ancient secrets.",
+    "featured": true,
     "premiumJson": "The Sacre Mal.json",
     "premiumImage": "The Sacre Mal.jpg",
     "image4k": "The Sacre Mal 4k.jpg"
