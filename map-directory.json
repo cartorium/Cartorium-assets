@@ -284,30 +284,10 @@
       "tokens": "",
       "variants": [
         {
-          "name": "",
-          "thumb": "",
-          "json": "",
-          "image": ""
-        }
-      ]
-    },
-    {
-      "id": "Flubs-Ferry-at-sea",
-      "name": "Flubs Ferry (At Sea)",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Flubs-Ferry-at-sea_thumb.webp",
-      "description": "The ferry detached and navigating the open, turbulent waters.",
-      "image4k": "Flubs Ferry at sea 4k.jpg",
-      "image8k": "",
-      "premiumJson": "Flubs Ferry at sea.json",
-      "premiumImage": "Flubs Ferry at sea.jpg",
-      "pdfUrl": "",
-      "tokens": "",
-      "variants": [
-        {
-          "name": "",
-          "thumb": "",
-          "json": "",
-          "image": ""
+          "name": "Flubs Ferry (At Sea)",
+          "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Flubs-Ferry-at-sea_thumb.webp",
+          "json": "Flubs Ferry at sea.json",
+          "image": "Flubs Ferry at sea.jpg"
         }
       ]
     },
