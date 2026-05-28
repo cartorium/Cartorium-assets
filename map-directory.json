@@ -9,20 +9,20 @@
       "summary": "A sprawling multi biome dungeon with many traps, puzzles and more",
       "features": [
         {
-          "icon": "fa-sun",
-          "label": "Solar Forge Core"
+          "icon": "fa-spider",
+          "label": "More webs and worries"
         },
         {
           "icon": "fa-fire",
-          "label": "Animated Heat Vents"
+          "label": "It's getting hot down here"
         },
         {
-          "icon": "fa-chess-rook",
-          "label": "Multi-Level Keep"
+          "icon": "fa-dungeon",
+          "label": "Mega-dungeon"
         },
         {
-          "icon": "fa-cloud-bolt",
-          "label": "Storm Ritual Chamber"
+          "icon": "fa-eye",
+          "label": "Traps, Puzzles, Loot!"
         }
       ]
     },
