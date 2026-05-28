@@ -1,7 +1,7 @@
 {
   "showcase": {
     "latest": {
-      "id": "Hunters-Guild-Hall"
+      "id": "Webwood"
     },
     "wip": {
       "id": "Solar-Keep",
@@ -27,10 +27,30 @@
       ]
     },
     "popular": {
-      "id": "Deathdome"
+      "id": "Hunters-Guild-Hall"
     }
   },
   "maps": [
+    {
+      "id": "Webwood",
+      "name": "Webwood",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Webwood_thumb.png",
+      "description": "A darkened forest weaved with webs, enter at your own peril.",
+      "image4k": "Webwood 4k.jpg",
+      "image8k": "",
+      "premiumJson": "Webwood.json",
+      "premiumImage": "Webwood.jpg",
+      "pdfUrl": "",
+      "tokens": "",
+      "variants": [
+        {
+          "name": "",
+          "thumb": "",
+          "json": "",
+          "image": ""
+        }
+      ]
+    },
     {
       "id": "War-Camp",
       "name": "War Camp",
