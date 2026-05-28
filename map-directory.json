@@ -4,9 +4,9 @@
       "id": "Webwood"
     },
     "wip": {
-      "id": "Solar-Keep",
-      "progress": 50,
-      "summary": "A radiant fortress powered by ancient solar machinery and divine fire.",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Undercrypts_thumb.webp",
+      "progress": 35,
+      "summary": "A sprawling multi biome dungeon with many traps, puzzles and more",
       "features": [
         {
           "icon": "fa-sun",
