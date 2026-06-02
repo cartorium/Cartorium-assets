@@ -300,6 +300,24 @@
           "image": ""
         }
       ]
+    },
+    {
+      "id": "Thieves-Guild",
+      "name": "Thieves Guild",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Thieves-Guild_thumb.webp",
+      "description": "IN THE MOST FORSAKEN CORNER OF TOWN. WHERE THE SEWERS SPILL OPENLY AND DESPERATE MEN BEG IN THE GUTTERS. BOOTLESS BENNY WORKS IN THE SHADOWS, GATHERING HIS MEN AND WEAVING THE NOCTUARY THROUGH EVERY BURROW IN THESE PARTS. BEST TO MAKE A FRIEND OF THEM...RATHER THAN AN ENEMY...",
+      "premiumJson": "Thieves Guild.json",
+      "premiumImage": "Thieves Guild.jpg",
+      "pdfUrl": "",
+      "tokens": "",
+      "variants": [
+        {
+          "name": "",
+          "thumb": "",
+          "json": "",
+          "image": ""
+        }
+      ]
     }
   ]
 }
