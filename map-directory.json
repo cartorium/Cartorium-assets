@@ -310,6 +310,7 @@
       "premiumImage": "Thieves Guild.jpg",
       "pdfUrl": "https://cartorium.github.io/Cartorium-assets/Thieves%20Den%20Written%20Module%20(2).pdf", 
       "freePdf": true,
+      "isFree": true,
       "tokens": "",
       "variants": [
         {
