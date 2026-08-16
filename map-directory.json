@@ -320,6 +320,24 @@
           "image": ""
         }
       ]
+    },
+    {
+      "id": "Red-Dragon-Keep",
+      "name": "Red Dragon Keep",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Red-Dragon-Keep_thumb.webp",
+      "description": "",
+      "premiumJson": "Red Dragon Keep.json",
+      "premiumImage": "Red Dragon Keep.jpg",
+      "pdfUrl": "",
+      "tokens": "Red Dragon Keep tokens.json",
+      "variants": [
+        {
+          "name": "",
+          "thumb": "",
+          "json": "",
+          "image": ""
+        }
+      ]
     }
   ]
 }
