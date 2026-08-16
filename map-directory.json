@@ -338,6 +338,24 @@
           "image": ""
         }
       ]
+    },
+    {
+      "id": "Sewer-Rats-Refuge",
+      "name": "Sewer Rats Refuge",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Sewer-Rats-Refuge_thumb.webp",
+      "description": "Down where the bricks weep, he holds his court. That ain't just a crown on his head it's a cursed artifact, and it gave the beast that wears it a wicked, human cunning. His kingdom is built on stolen goods and lost things. Now, his swarming subjects are getting bolder, and their chittering sounds like dark prayers. He doesn't just want our scraps anymore; he wants the whole town. Someone has to go down and break his crown.",
+      "premiumJson": "Sewer Rats Refuge.json",
+      "premiumImage": "Sewer Rats Refuge.jpg",
+      "pdfUrl": "",
+      "tokens": "Sewer Rats Refuge tokens.json",
+      "variants": [
+        {
+          "name": "Sewer Rats Refuge No Boss",
+          "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Sewer-Rats-Refuge-variant1_thumb.webp",
+          "json": "Sewer Rats Refuge.json",
+          "image": "Sewer Rats Refuge Variant1.jpg"
+        }
+      ]
     }
   ]
 }
