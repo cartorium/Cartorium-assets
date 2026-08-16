@@ -356,6 +356,78 @@
           "image": "Sewer Rats Refuge Variant1.jpg"
         }
       ]
+    },
+    {
+      "id": "Weeping-Woods",
+      "name": "Weeping Woods",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Weeping-Woods_thumb.webp",
+      "description": "In the Dark Wood stands a Tree older than time itself. Much like a spring produces water, The Weeping Ash produces a green nectar that has come deep from the earth, filtered through it's roots and disposed out of it's trunk. Some say the nectar is the cure to many remedies.",
+      "premiumJson": "Weeping Woods.json",
+      "premiumImage": "Weeping Woods.jpg",
+      "pdfUrl": "",
+      "tokens": "Weeping Woods tokens.json",
+      "variants": [
+        {
+          "name": "",
+          "thumb": "",
+          "json": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "Artificers-Workshop",
+      "name": "Artificers Workshop",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Artificers-Workshop_thumb.webp",
+      "description": "If you need gear no one else can make, you brave the northern cliffs to see Torvin. His workshop is a multi-level marvel bolted right into the mountain face, filled with the hum of enchanted gears and the glow of crystal cores. He's a surly hermit, but his artificed weapons are the finest in the land.\n\nThey say his other great art is his wine. So, if you want his help, my advice? Bring a good bottle as a greeting. It's the only language he speaks besides gears.",
+      "premiumJson": "Artificers Workshop.json",
+      "premiumImage": "Artificers Workshop.jpg",
+      "pdfUrl": "",
+      "tokens": "Artificers Workshop tokens.json",
+      "variants": [
+        {
+          "name": "",
+          "thumb": "",
+          "json": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "Royal-Study",
+      "name": "Royal Study",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Royal-Study_thumb.webp",
+      "description": "This is the King's private sanctuary. Here, with only his wolf for company, he searches his collection of forbidden texts for a cure to the Spreading Blight. He allows only his most trusted monastic scholars to study here, hoping their combined wisdom can find the secret that will save the world before it is too late.",
+      "premiumJson": "Royal Study.json",
+      "premiumImage": "The Royal Study.jpg",
+      "pdfUrl": "",
+      "tokens": "Royal Study tokens.json",
+      "variants": [
+        {
+          "name": "",
+          "thumb": "",
+          "json": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "Fleshworks",
+      "name": "Fleshworks",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Fleshworks_thumb.webp",
+      "description": "This is the Fleshworks, a grim parody of a factory where the production line deals in death. Here, the Master rejects stone and clay, using lightning and alchemy to stitch life into his golems. Chains hoist components to the assembly table, where the city's missing are grimly repurposed.",
+      "premiumJson": "Fleshworks.json",
+      "premiumImage": "Fleshworks.jpg",
+      "pdfUrl": "",
+      "tokens": "Fleshworks tokens.json",
+      "variants": [
+        {
+          "name": "Fleshworks No Corpse",
+          "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Fleshworks-variant1_thumb.webp",
+          "json": "Fleshworks.json",
+          "image": "Fleshworks Variant1.jpg"
+        }
+      ]
     }
   ]
 }
