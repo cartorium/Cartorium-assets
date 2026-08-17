@@ -325,7 +325,7 @@
       "id": "Red-Dragon-Keep",
       "name": "Red Dragon Keep",
       "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Red-Dragon-Keep_thumb.webp",
-      "description": "Legend tells of a great Redwood forest, far from here, where you might seek the Red Dragon and his followers, Or is it just a Legend? Perhaps this is just another old Military keep, paying homage to a forgotten time.",
+      "description": "",
       "premiumJson": "Red Dragon Keep.json",
       "premiumImage": "Red Dragon Keep.jpg",
       "pdfUrl": "",
@@ -347,7 +347,7 @@
       "premiumJson": "Sewer Rats Refuge.json",
       "premiumImage": "Sewer Rats Refuge.jpg",
       "pdfUrl": "",
-      "tokens": "Sewer Rats Refuge tokens.json",
+      "tokens": "",
       "variants": [
         {
           "name": "Sewer Rats Refuge No Boss",
@@ -365,7 +365,7 @@
       "premiumJson": "Weeping Woods.json",
       "premiumImage": "Weeping Woods.jpg",
       "pdfUrl": "",
-      "tokens": "Weeping Woods tokens.json",
+      "tokens": "",
       "variants": [
         {
           "name": "",
@@ -383,7 +383,7 @@
       "premiumJson": "Artificers Workshop.json",
       "premiumImage": "Artificers Workshop.jpg",
       "pdfUrl": "",
-      "tokens": "Artificers Workshop tokens.json",
+      "tokens": "",
       "variants": [
         {
           "name": "",
@@ -401,7 +401,7 @@
       "premiumJson": "Royal Study.json",
       "premiumImage": "The Royal Study.jpg",
       "pdfUrl": "",
-      "tokens": "Royal Study tokens.json",
+      "tokens": "",
       "variants": [
         {
           "name": "",
@@ -419,7 +419,7 @@
       "premiumJson": "Fleshworks.json",
       "premiumImage": "Fleshworks.jpg",
       "pdfUrl": "",
-      "tokens": "Fleshworks tokens.json",
+      "tokens": "",
       "variants": [
         {
           "name": "Fleshworks No Corpse",
