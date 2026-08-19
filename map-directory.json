@@ -1,24 +1,24 @@
 {
   "showcase": {
     "latest": {
-      "id": "Webwood"
+      "id": "Prison-Camp"
     },
     "wip": {
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Undercrypt_thumb.png",
-      "progress": 75,
-      "summary": "A sprawling multi biome dungeon with many entrances and exists, traps, puzzles and more, one of our largest maps yet",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Forest%20Labyrinth%20prev.png",
+      "progress": 85,
+      "summary": "A Forest Labyrinth deep beneath a towering canopy, down in the darkwoods, Puzzles, Traps and more",
       "features": [
         {
-          "icon": "fa-spider",
-          "label": "More webs and worries"
+          "icon": "fa-skull-crossbones",
+          "label": "Watch your step, any tile could be fatal"
         },
         {
-          "icon": "fa-fire",
-          "label": "It's getting hot down here"
+          "icon": "fa-ghost",
+          "label": "Something's not right with this part of the forest"
         },
         {
           "icon": "fa-dungeon",
-          "label": "Mega-dungeon"
+          "label": "Dungeon"
         },
         {
           "icon": "fa-eye",
