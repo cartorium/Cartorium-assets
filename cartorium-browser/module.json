@@ -1,0 +1,16 @@
+{
+  "id": "cartorium-browser",
+  "title": "Cartorium Vault",
+  "description": "Browse and deploy premium Cartorium battlemaps directly into your Foundry VTT scenes.",
+  "version": "1.0.0",
+  "scripts": [
+    "main.js"
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "url": "https://github.com/cartorium/Cartorium-Modules",
+  "manifest": "https://raw.githubusercontent.com/cartorium/Cartorium-Modules/main/module.json",
+  "download": "https://github.com/cartorium/Cartorium-Modules/releases/download/v1.0.0/cartorium-browser.zip"
+}

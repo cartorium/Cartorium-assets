@@ -1,0 +1,295 @@
+<style>
+    .cartorium-browser-root {
+        height: 100%;
+        overflow-y: scroll;
+        background: linear-gradient(to bottom, #2b1d14 0%, #140d0a 100%);
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        scrollbar-width: thin;
+        scrollbar-color: #8b5a2b #1a110d;
+    }
+
+    .patreon-status-bar {
+        background: linear-gradient(to bottom, #3e2723, #2a1914);
+        padding: 12px 20px;
+        border-bottom: 3px solid #1a110d;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.8);
+    }
+
+    .system-status {
+        color: #d4af37; 
+        font-size: 1.1rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 2px #000;
+    }
+
+    .status-dot {
+        width: 10px;
+        height: 10px;
+        background: #ff8c00;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #ff8c00, 0 0 20px #ff4500;
+        animation: flicker 3s infinite alternate;
+    }
+
+    @keyframes flicker {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.8; transform: scale(0.9); box-shadow: 0 0 5px #ff8c00; }
+        25%, 75% { opacity: 0.9; transform: scale(1.05); }
+    }
+
+    .patreon-btn {
+        background: linear-gradient(to bottom, #a11, #700);
+        color: #f4e8d3;
+        border: 1px solid #d4af37;
+        padding: 6px 16px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: 'Palatino Linotype', serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s ease;
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.6);
+    }
+
+    .patreon-btn:hover {
+        background: linear-gradient(to bottom, #c22, #900);
+        color: #fff;
+        border-color: #ffd700;
+        box-shadow: inset 0 0 8px rgba(255,215,0,0.3), 0 2px 8px rgba(0,0,0,0.8);
+    }
+
+    .archive-tabs {
+        display: flex;
+        background: #2a1914;
+        border-bottom: 2px solid #5d4037;
+        padding: 0 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .tab-btn {
+        background: transparent;
+        color: #a88a68;
+        border: none;
+        padding: 12px 24px;
+        font-family: 'Palatino Linotype', serif;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .tab-btn:hover {
+        color: #d4af37;
+        background: rgba(255, 215, 0, 0.05);
+    }
+
+    .tab-btn.active {
+        color: #ffd700;
+        border-bottom-color: #d4af37;
+        text-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+    }
+
+    .map-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        gap: 25px;
+        padding: 30px;
+    }
+
+    .map-card {
+        background: #f4e8d3; 
+        background-image: radial-gradient(circle, transparent 20%, #eaddcf 100%);
+        border: 2px solid #8b5a2b;
+        padding: 12px;
+        text-align: center;
+        border-radius: 4px;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        box-shadow: inset 0 0 15px rgba(139, 90, 43, 0.2), 2px 4px 8px rgba(0,0,0,0.6);
+    }
+
+    .map-card:hover {
+        border-color: #5d4037;
+        transform: translateY(-4px);
+        box-shadow: inset 0 0 20px rgba(139, 90, 43, 0.3), 4px 8px 15px rgba(0,0,0,0.7);
+    }
+
+    .img-container {
+        width: 100%;
+        height: 120px;
+        background: #2a1914;
+        border-radius: 2px;
+        margin-bottom: 12px;
+        overflow: hidden;
+        border: 2px solid #3e2723;
+        box-shadow: inset 0 0 10px #000;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+    .map-card:hover .img-container img {
+        transform: scale(1.05);
+    }
+
+    .map-title {
+        color: #2c1a0e; 
+        font-weight: bold;
+        font-size: 1.05rem;
+        height: 2.4em;
+        overflow: hidden;
+        margin-bottom: 10px;
+        line-height: 1.2;
+        border-bottom: 1px solid rgba(139, 90, 43, 0.4);
+        padding-bottom: 4px;
+    }
+
+    /* DROPDOWN SELECTOR FIX */
+    .version-select {
+        width: 100%;
+        background: #eaddcf;
+        color: #2c1a0e;
+        border: 1px solid #8b5a2b;
+        padding: 6px; /* Added substantial padding */
+        margin-bottom: 12px;
+        font-family: 'Palatino Linotype', serif;
+        font-size: 0.85rem; 
+        font-weight: bold;
+        border-radius: 2px;
+        outline: none;
+        cursor: pointer;
+        box-sizing: border-box; /* Forces padding to be internal */
+        line-height: 1.4; /* Adds explicit vertical space for letters */
+        height: auto;
+        box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .import-btn {
+        background: linear-gradient(to bottom, #4e342e, #3e2723);
+        color: #d4af37;
+        border: 1px solid #1a110d;
+        border-top: 1px solid #6d4c41;
+        width: 100%;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 2px;
+        font-family: 'Palatino Linotype', serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: all 0.2s ease;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .import-btn:hover {
+        background: linear-gradient(to bottom, #5d4037, #4e342e);
+        color: #ffd700;
+    }
+
+    .import-btn:active {
+        transform: translateY(2px);
+        box-shadow: none;
+    }
+
+    /* ==========================================
+       HERO CARD (ONLY ACTIVE IN SHOWCASE MODE)
+       ========================================== */
+    .map-grid.showcase-mode .map-card[data-featured="true"] {
+        grid-column: span 2; 
+        border-color: #d4af37; 
+        background-image: radial-gradient(circle, transparent 10%, #eaddcf 120%);
+        box-shadow: inset 0 0 20px rgba(212, 175, 55, 0.1), 3px 6px 12px rgba(0,0,0,0.7);
+    }
+
+    .map-grid.showcase-mode .map-card[data-featured="true"]:hover {
+        border-color: #ffd700;
+        box-shadow: inset 0 0 30px rgba(212, 175, 55, 0.25), 5px 10px 18px rgba(0,0,0,0.9);
+    }
+
+    .map-grid.showcase-mode .map-card[data-featured="true"] .img-container {
+        height: 280px; 
+        border-color: #5d4037;
+    }
+
+    .map-grid.showcase-mode .map-card[data-featured="true"] .map-title {
+        font-size: 1.5rem; 
+        color: #5e1a1a; 
+        height: auto;
+        padding-bottom: 8px;
+    }
+
+    .map-grid.showcase-mode .map-card[data-featured="true"] .version-select {
+        font-size: 1rem; 
+        padding: 8px;
+    }
+
+    .map-grid.showcase-mode .map-card[data-featured="true"] .import-btn {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+</style>
+
+<section class="cartorium-browser-root">
+    <div class="patreon-status-bar">
+        <div class="system-status">
+            <div class="status-dot"></div>
+            Cartorium Archives
+        </div>
+        <a href="https://www.patreon.com/oauth2/authorize?response_type=code&client_id=o3bS4jRO4uy8Oj0ni-_5CikmhZD8Cz9TCGCcisQn2rzpTYPvicJ8h8qCKKPHuHOQ&redirect_uri=https%3A%2F%2Fcartorium-gatekeeper.boatofdoom.workers.dev%2Fauth" 
+           target="_blank" 
+           class="patreon-btn">
+            <i class="fab fa-patreon"></i> LINK PATREON
+        </a>
+    </div>
+
+    <nav class="archive-tabs">
+        <button type="button" class="tab-btn active" data-tab="all">All Maps</button>
+        <button type="button" class="tab-btn" data-tab="featured">★ Featured Showcase</button>
+    </nav>
+
+    <div class="map-grid">
+        {{#each maps}}
+        <div class="map-card" data-featured="{{this.featured}}">
+            <div class="img-container">
+                <img src="{{this.thumb}}" onerror="this.style.display='none'">
+            </div>
+            
+            <div class="map-title">
+                {{this.name}}
+            </div>
+
+            <select class="version-select">
+                <option value="premium">Premium (Walls/Lights)</option>
+                <option value="4k">4K (Raw Canvas)</option>
+            </select>
+            
+            <button type="button" class="import-btn" 
+                    data-name="{{this.name}}"
+                    data-id="{{this.id}}"
+                    data-json="{{this.jsonFile}}"
+                    data-img="{{this.imageFile}}"
+                    data-img4k="{{this.image4kFile}}">
+                <i class="fas fa-download"></i> INSTALL
+            </button>
+        </div>
+        {{/each}}
+    </div>
+</section>
