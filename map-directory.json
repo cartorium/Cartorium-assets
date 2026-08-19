@@ -47,7 +47,14 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Forest",
+        "Beast",
+        "Horror",
+        "Rescue"
+      ],
+      "dateAdded": "2026-05-28"
     },
     {
       "id": "War-Camp",
@@ -65,7 +72,14 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Camp",
+        "Bandits",
+        "Intrigue",
+        "Boss Fight"
+      ],
+      "dateAdded": "2026-02-18"
     },
     {
       "id": "Sacre-Mal",
@@ -83,7 +97,14 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Cult/Religious",
+        "Crypt/Undead",
+        "Horror",
+        "Rescue"
+      ],
+      "dateAdded": "2026-04-01"
     },
     {
       "id": "Crimson-Lounge",
@@ -101,6 +122,12 @@
           "json": "",
           "image": ""
         }
+      ],
+      "tags": [
+        "Urban",
+        "Crypt/Undead",
+        "Intrigue",
+        "Horror"
       ]
     },
     {
@@ -119,6 +146,12 @@
           "json": "",
           "image": ""
         }
+      ],
+      "tags": [
+        "Urban",
+        "Cult/Religious",
+        "Intrigue",
+        "Heist"
       ]
     },
     {
@@ -137,7 +170,14 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Keep/Fortress",
+        "Mountain",
+        "Boss Fight",
+        "Faction Conflict"
+      ],
+      "dateAdded": "2026-03-03"
     },
     {
       "id": "Scarecrows-Watch",
@@ -155,6 +195,12 @@
           "json": "",
           "image": ""
         }
+      ],
+      "tags": [
+        "Rural",
+        "Cult/Religious",
+        "Horror",
+        "Construct"
       ]
     },
     {
@@ -173,7 +219,13 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Crypt/Undead",
+        "Horror",
+        "Mystery"
+      ],
+      "dateAdded": "2026-02-25"
     },
     {
       "id": "Hunters-Guild-Hall",
@@ -191,7 +243,14 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Forest",
+        "Beast",
+        "Boss Fight",
+        "Faction Conflict"
+      ],
+      "dateAdded": "2026-04-09"
     },
     {
       "id": "Deathdome",
@@ -209,7 +268,14 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Arena",
+        "Intrigue",
+        "Boss Fight",
+        "Faction Conflict"
+      ],
+      "dateAdded": "2026-03-26"
     },
     {
       "id": "Carrion-Carnival",
@@ -227,7 +293,14 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Carnival",
+        "Crypt/Undead",
+        "Horror",
+        "Rescue"
+      ],
+      "dateAdded": "2026-03-12"
     },
     {
       "id": "battlebridge",
@@ -245,7 +318,13 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Rural",
+        "Bandits",
+        "Faction Conflict"
+      ],
+      "dateAdded": "2026-04-17"
     },
     {
       "id": "Amphail-Mountain-Town",
@@ -263,7 +342,14 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Mountain",
+        "Keep/Fortress",
+        "Faction Conflict",
+        "Intrigue"
+      ],
+      "dateAdded": "2026-02-11"
     },
     {
       "id": "Flubs-Ferry",
@@ -281,7 +367,14 @@
           "json": "Flubs Ferry at sea.json",
           "image": "Flubs Ferry at sea.jpg"
         }
-      ]
+      ],
+      "tags": [
+        "Water",
+        "Mystery",
+        "Horror",
+        "Intrigue"
+      ],
+      "dateAdded": "2026-05-04"
     },
     {
       "id": "Mystic-Camp",
@@ -299,7 +392,14 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Camp",
+        "Forest",
+        "Mystery",
+        "Intrigue"
+      ],
+      "dateAdded": "2026-05-11"
     },
     {
       "id": "Thieves-Guild",
@@ -320,6 +420,12 @@
           "json": "",
           "image": ""
         }
+      ],
+      "tags": [
+        "Urban",
+        "Dungeon",
+        "Heist",
+        "Trap/Puzzle"
       ]
     },
     {
@@ -338,7 +444,14 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Keep/Fortress",
+        "Forest",
+        "Mystery",
+        "Beast"
+      ],
+      "dateAdded": "2026-07-13"
     },
     {
       "id": "Sewer-Rats-Refuge",
@@ -356,6 +469,13 @@
           "json": "Sewer Rats Refuge.json",
           "image": "Sewer Rats Refuge Variant1.jpg"
         }
+      ],
+      "tags": [
+        "Underground",
+        "Urban",
+        "Beast",
+        "Horror",
+        "Boss Fight"
       ]
     },
     {
@@ -374,6 +494,12 @@
           "json": "",
           "image": ""
         }
+      ],
+      "tags": [
+        "Forest",
+        "Rescue",
+        "Faction Conflict",
+        "Mystery"
       ]
     },
     {
@@ -392,6 +518,12 @@
           "json": "",
           "image": ""
         }
+      ],
+      "tags": [
+        "Mountain",
+        "Heist",
+        "Intrigue",
+        "Construct"
       ]
     },
     {
@@ -410,6 +542,12 @@
           "json": "",
           "image": ""
         }
+      ],
+      "tags": [
+        "Keep/Fortress",
+        "Intrigue",
+        "Mystery",
+        "Heist"
       ]
     },
     {
@@ -428,6 +566,13 @@
           "json": "Fleshworks.json",
           "image": "Fleshworks Variant1.jpg"
         }
+      ],
+      "tags": [
+        "Dungeon",
+        "Urban",
+        "Construct",
+        "Horror",
+        "Rescue"
       ]
     },
     {
@@ -446,6 +591,12 @@
           "json": "",
           "image": ""
         }
+      ],
+      "tags": [
+        "Market/Shop",
+        "Urban",
+        "Fiend/Devil",
+        "Intrigue"
       ]
     },
     {
@@ -464,7 +615,14 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Rural",
+        "Dungeon",
+        "Horror",
+        "Rescue"
+      ],
+      "dateAdded": "2026-06-20"
     },
     {
       "id": "Prison-Camp",
@@ -482,7 +640,14 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Rural",
+        "Heist",
+        "Faction Conflict",
+        "Intrigue"
+      ],
+      "dateAdded": "2026-08-04"
     },
     {
       "id": "The-Riftwatch-Monument",
@@ -500,7 +665,14 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Camp",
+        "Mountain",
+        "Mystery",
+        "Construct"
+      ],
+      "dateAdded": "2026-04-21"
     },
     {
       "id": "Shadow-Market",
@@ -518,7 +690,14 @@
           "json": "",
           "image": ""
         }
-      ]
+      ],
+      "tags": [
+        "Market/Shop",
+        "Urban",
+        "Mystery",
+        "Intrigue"
+      ],
+      "dateAdded": "2026-03-20"
     }
   ]
 }
