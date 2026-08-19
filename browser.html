@@ -1,0 +1,1658 @@
+<style>
+    .cartorium-browser-root {
+        --accent: #d9ae3e;
+        --accent-strong: #e8c257;
+        --gold: #d4af37;
+        --panel-bg: #17110d;
+        --panel-bg-alt: #201812;
+        --panel-border: rgba(255,255,255,0.08);
+        --text-light: #c7bca5;
+        --text-muted: #a89a88;
+        --cream: #2b1d14;
+        --cream-dark: #c7bca5;
+        height: 100%;
+        overflow: hidden;
+        background:
+            radial-gradient(circle at top, rgba(255,140,60,0.05), transparent 40%),
+            linear-gradient(to bottom, #17100c 0%, #0c0806 100%);
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        position: relative;
+    }
+
+/* ===================================================== */
+    /* --- HEADER BUTTON GROUP --- */
+    /* ===================================================== */
+    .header-buttons {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .subscribe-btn {
+        background: transparent !important;
+        border: 1px solid rgba(224,138,62,0.5) !important;
+        color: var(--accent) !important;
+        height: 32px !important;
+        min-height: 32px !important;
+        font-size: 0.85rem;
+        padding: 0 14px;
+        border-radius: 6px;
+        font-weight: 600;
+        box-shadow: none !important;
+    }
+
+    .subscribe-btn:hover {
+        background: rgba(224,138,62,0.1) !important;
+        color: var(--accent-strong) !important;
+        border-color: var(--accent) !important;
+    }
+	
+    /* ===================================================== */
+    /* --- COMMON STYLES --- */
+    /* ===================================================== */
+
+    .patreon-status-bar {
+        background: #140d0a;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 56px;
+        overflow: hidden;
+        z-index: 10;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .system-status {
+        color: var(--text-light);
+        font-size: 1.05rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        letter-spacing: 0.3px;
+        text-shadow: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 0;
+    }
+
+    .status-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #00e08a;
+        box-shadow: 0 0 6px #00e08a;
+        flex-shrink: 0;
+    }
+
+    .patreon-btn,
+    .action-btn {
+        background: var(--panel-bg-alt);
+        color: var(--text-light);
+        border: 1px solid rgba(212,175,55,0.35);
+        padding: 6px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: auto;
+        min-height: 36px;
+        height: 36px;
+        transition: all 0.2s ease;
+        box-shadow: none;
+        flex-shrink: 0;
+    }
+
+    .patreon-btn:hover,
+    .action-btn:hover {
+        background: #2a1f17;
+        color: var(--text-light);
+        border-color: var(--gold);
+        transform: none;
+        box-shadow: 0 0 0 1px rgba(212,175,55,0.15);
+    }
+
+    /* ===================================================== */
+    /* --- VIEW CONTAINERS --- */
+    /* ===================================================== */
+
+    .view-container {
+        height: calc(100% - 56px);
+        width: 100%;
+        position: absolute;
+        top: 56px;
+        transition:
+            opacity 0.4s ease,
+            transform 0.4s ease,
+            visibility 0.4s ease;
+    }
+
+    .grid-view {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 5;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: #8b5a2b #1a110d;
+        visibility: visible;
+    }
+
+    .detail-view {
+        opacity: 0;
+        transform: translateX(40px);
+        pointer-events: none;
+        z-index: 1;
+        background: linear-gradient(to bottom, #17100c 0%, #0c0806 100%);
+        overflow-y: auto;
+        visibility: hidden;
+    }
+
+    .show-detail .grid-view {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    .show-detail .detail-view {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+        z-index: 5;
+    }
+
+    /* ===================================================== */
+    /* --- LOGO STYLING --- */
+    /* ===================================================== */
+    .main-logo {
+        height: 34px;
+        width: 34px;
+        max-width: 34px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+        margin-right: 6px;
+        filter: none;
+    }
+
+    /* ===================================================== */
+    /* --- UPGRADED GRID VIEW TABS --- */
+    /* ===================================================== */
+
+    .archive-tabs {
+        display: flex;
+        justify-content: center; 
+        background: #140d0a; 
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.1); 
+        box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+        gap: 15px; 
+    }
+
+    .tab-btn {
+        background: #1a110d;
+        color: #a88a68;
+        border: 1px solid #3e2723;
+        border-radius: 30px;
+        padding: 10px 28px;
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        font-size: 0.95rem;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        transition: all 0.3s ease;
+        
+        outline: none !important; 
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.5) !important;
+    }
+
+    .tab-btn:hover {
+        color: #e0c48c;
+        border-color: #8b5a2b;
+        background: #241812;
+        transform: translateY(-2px);
+    }
+
+    .tab-btn.active {
+        color: #ffd700; 
+        background: #0a0604; 
+        border-color: #d4af37;
+        text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+        box-shadow: inset 0 3px 8px rgba(0,0,0,0.9) !important; 
+    }
+
+    .map-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 28px;
+        padding: 30px;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .map-card {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+        background: linear-gradient(to bottom, rgba(255,255,255,0.03), transparent), #2b1d14;
+        background-image: radial-gradient(circle, transparent 20%, #1f140d 100%);
+        border: 2px solid #8b5a2b;
+        padding: 12px;
+        text-align: center;
+        border-radius: 6px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 2px 4px 8px rgba(0,0,0,0.6);
+        transition: transform 0.35s ease, opacity 0.35s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .map-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -120%;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(120deg, transparent, rgba(255,255,255,0.15), transparent);
+        transition: 0.5s;
+    }
+
+    .map-card:hover::before {
+        left: 130%;
+    }
+
+    .map-card:hover {
+        transform: translateY(-5px) scale(1.02);
+        border-color: #ffd700;
+        box-shadow: 0 0 20px rgba(255,215,0,0.18), 0 10px 18px rgba(0,0,0,0.7);
+    }
+
+    .img-container {
+        width: 100%;
+        height: 150px;
+        background: #2a1914;
+        margin-bottom: 12px;
+        overflow: hidden;
+        border: 2px solid #3e2723;
+        border-radius: 4px;
+        position: relative;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+    .map-card:hover .img-container img {
+        transform: scale(1.05);
+    }
+
+    .map-title {
+        color: var(--text-light);
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    }
+
+    /* ===================================================== */
+    /* --- DETAIL VIEW --- */
+    /* ===================================================== */
+
+    .detail-header {
+        padding: 15px 30px;
+        display: flex !important;
+        align-items: center !important;
+        background: #100b08;
+        height: 68px;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+        box-shadow: none;
+    }
+
+    .detail-header h2 {
+        color: var(--accent);
+        margin: 0;
+        font-size: 1.7rem;
+        font-weight: 700;
+        flex: 1;
+        text-shadow: none;
+    }
+
+    .close-detail-btn {
+        height: 38px !important;
+        flex-shrink: 0;
+        white-space: nowrap;
+        background: var(--accent) !important;
+        border: none !important;
+        color: #1a0f06 !important;
+        font-weight: 700;
+        border-radius: 8px;
+    }
+
+    .close-detail-btn:hover {
+        background: var(--accent-strong) !important;
+        color: #1a0f06 !important;
+        box-shadow: none;
+    }
+
+    .detail-layout {
+        display: flex;
+        padding: 30px;
+        gap: 35px;
+    }
+
+    .detail-left {
+        flex: 1.15;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .detail-image-box {
+        position: relative;
+        flex: 0 0 490px;
+        height: 490px;
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 10px;
+        background: #000;
+        overflow: hidden;
+        box-shadow: none;
+        cursor: pointer;
+        transition: border-color 0.25s ease;
+    }
+
+    .detail-image-box:hover {
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .detail-image-box img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: 50% 0%;
+    }
+
+    .pan-hint {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 6;
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.65);
+        background: rgba(0, 0, 0, 0.45);
+        border-radius: 50%;
+        pointer-events: none;
+        transition: color 0.25s ease;
+    }
+
+    .pan-hint i.fa-play {
+        margin-left: 1px; /* optically center the play glyph, which isn't symmetrical */
+    }
+
+    .detail-image-box:hover .pan-hint {
+        color: #fff;
+    }
+
+    .zoom-toggle-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 6;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.6);
+        background: rgba(0, 0, 0, 0.22);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: color 0.25s ease, background 0.25s ease;
+    }
+
+    .detail-image-box:hover .zoom-toggle-btn {
+        color: #fff;
+    }
+
+    .zoom-toggle-btn:hover:not(.zoom-active) {
+        background: rgba(217, 55, 55, 0.75);
+        color: #fff;
+    }
+
+    .zoom-toggle-btn.zoom-active {
+        color: #fff;
+        background: rgba(226, 89, 58, 0.6);
+    }
+
+    .detail-image-box.zoom-mode {
+        cursor: none;
+    }
+
+    .detail-image-box.zoom-mode .pan-hint,
+    .detail-image-box.zoom-mode .zoom-toggle-btn {
+        cursor: pointer;
+    }
+
+    .zoom-lens {
+        position: absolute;
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: 2px solid rgba(255, 255, 255, 0.85);
+        box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.35), 0 4px 14px rgba(0, 0, 0, 0.5);
+        background-repeat: no-repeat;
+        pointer-events: none;
+        z-index: 5;
+        opacity: 0;
+        transition: opacity 0.35s ease;
+    }
+
+    #detail-main-img.panning {
+        animation: mapPanDown 22s linear forwards;
+    }
+
+    #detail-main-img.panning.paused {
+        animation-play-state: paused;
+    }
+
+    /* The fade layer sits exactly on top of the main image, always holding the
+       same picture, reset to the top position. It's invisible until the crossfade
+       step, so the "reveal" dissolves in over the panned view instead of through
+       a gap of empty space. */
+    .detail-image-fade-layer {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 1.4s ease;
+    }
+
+    .detail-image-fade-layer.fade-visible {
+        opacity: 1;
+    }
+
+    @keyframes mapPanDown {
+        from { object-position: 50% 0%; }
+        to { object-position: 50% 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        #detail-main-img.panning {
+            animation: none;
+        }
+        .detail-image-fade-layer {
+            transition: none;
+        }
+    }
+
+    .lore-box {
+        flex: 0 0 420px;
+        height: 420px;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--gold) transparent;
+        background: var(--cream);
+        border-left: none;
+        border: 1px solid var(--panel-border);
+        padding: 18px 22px;
+        color: var(--cream-dark);
+        line-height: 1.55;
+        border-radius: 10px;
+        box-shadow: none;
+        font-family: 'Book Antiqua', 'Palatino Linotype', 'Georgia', serif;
+        font-size: 1.05rem;
+        font-style: italic;
+        font-weight: 500;
+        white-space: pre-line;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .detail-right {
+        flex: 0.95;
+        min-width: 0;
+        background: transparent;
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        position: relative;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* ===================================================== */
+    /* --- PREMIUM HEADER --- */
+    /* ===================================================== */
+
+    .premium-banner {
+        background:
+            linear-gradient(to right, #3b2615, #24140f);
+        border: 2px solid #8b5a2b;
+        border-radius: 6px;
+        padding: 16px 18px;
+        margin-bottom: 18px;
+        color: #f4e8d3;
+        box-shadow:
+            inset 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .premium-banner-title {
+        color: #ffd700;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .premium-banner-sub {
+        color: #d8c6a7;
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    /* ===================================================== */
+    /* --- INSTALL BUTTONS --- */
+    /* ===================================================== */
+
+    .install-btn {
+        width: 100%;
+        padding: 16px 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        height: auto;
+        min-height: 56px;
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+        font-size: 1rem;
+    }
+
+    .install-btn::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,0.08),
+            transparent
+        );
+        transform: translateX(-100%);
+        transition: transform 0.45s ease;
+    }
+
+    .install-btn:hover::after {
+        transform: translateX(100%);
+    }
+
+    .gold-btn {
+        background: var(--accent);
+        border: none;
+        color: #1a0f06;
+        font-weight: 700;
+        box-shadow: none;
+    }
+
+    .gold-btn:hover {
+        background: var(--accent-strong);
+        color: #1a0f06;
+    }
+
+    .bronze-btn {
+        background:
+            linear-gradient(to bottom, rgba(255,255,255,0.05), transparent),
+            linear-gradient(to bottom, #8b4513, #5c2e0b);
+        border: 2px solid #cd853f;
+    }
+
+    .variant-btn {
+        background:
+            linear-gradient(to bottom, rgba(255,255,255,0.04), transparent),
+            linear-gradient(to bottom, #4a3b32, #2b1d14);
+        border: 2px solid #8b5a2b;
+    }
+
+    .btn-thumb {
+        width: 72px;
+        height: 46px;
+        object-fit: cover;
+        border: 1px solid #d4af37;
+        border-radius: 4px;
+        flex-shrink: 0;
+        box-shadow:
+            0 0 8px rgba(0,0,0,0.5);
+    }
+
+/* ===================================================== */
+    /* --- MEMBERSHIP SHOWCASE --- */
+    /* ===================================================== */
+
+    .membership-showcase {
+        margin-top: 18px;
+        display: flex;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    .membership-card {
+        flex: 1 1 190px;
+        max-width: 260px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        min-height: 56px;
+        display: flex;
+        align-items: center;
+        padding: 10px 14px;
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease,
+            border-color 0.3s ease,
+            opacity 0.2s ease;
+        border: 1px solid rgba(255,255,255,0.08);
+        background: var(--panel-bg);
+        box-shadow: none;
+    }
+
+    .membership-card.switching {
+        animation: membershipPulse 0.35s ease;
+    }
+
+    @keyframes membershipPulse {
+        0% { transform: scale(0.98); opacity: 0.7; filter: brightness(0.9); }
+        50% { transform: scale(1.015); opacity: 1; filter: brightness(1.08); }
+        100% { transform: scale(1); opacity: 1; filter: brightness(1); }
+    }
+
+    .membership-card:hover {
+        transform: none;
+        box-shadow: none;
+        border-color: rgba(212,175,55,0.25);
+    }
+
+    .membership-card::before {
+        display: none;
+    }
+
+    .membership-left {
+        display: flex;
+        align-items: center;
+        gap: 12px; /* <--- CHANGED from 18px */
+        width: 100%;
+    }
+
+    .membership-icon {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.12);
+        background: rgba(0,0,0,0.3);
+        box-shadow: none;
+    }
+
+    .membership-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .membership-info {
+        flex: 1;
+    }
+
+    .membership-label {
+        color: rgba(255,255,255,0.6);
+        font-size: 0.65rem; /* <--- CHANGED from 0.75rem */
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 2px; /* <--- CHANGED from 8px */
+    }
+
+    .membership-name {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--text-light);
+        margin-bottom: 2px;
+        text-shadow: none;
+    }
+
+    .bronze-tier {
+        border-color: rgba(205,133,63,0.35);
+    }
+
+    .silver-tier {
+        border-color: rgba(220,220,220,0.3);
+    }
+
+    .gold-tier {
+        border-color: rgba(255,215,0,0.35);
+    }
+
+    /* ===================================================== */
+    /* --- BLOOD SWORN TEASER (informational only, no action) --- */
+    /* ===================================================== */
+
+    .blood-sworn-teaser {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 14px;
+        border-radius: 10px;
+        border: 1px solid rgba(255,255,255,0.1);
+        background: var(--panel-bg);
+        position: relative;
+        overflow: hidden;
+        perspective: 700px;
+    }
+
+    .blood-sworn-teaser.teaser-locked {
+        cursor: pointer;
+    }
+
+    .teaser-flip-inner {
+        position: relative;
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease;
+    }
+
+    .blood-sworn-teaser.teaser-locked:hover .teaser-flip-inner {
+        transform: rotateY(180deg);
+    }
+
+    .teaser-face {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+
+    .teaser-face-back {
+        position: absolute;
+        inset: 0;
+        transform: rotateY(180deg);
+        display: none;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .blood-sworn-teaser.teaser-locked .teaser-face-back {
+        display: flex;
+    }
+
+    .teaser-subscribe-btn {
+        color: #fff;
+        background: #e2593a;
+        font-weight: 700;
+        font-size: 0.85rem;
+        text-decoration: none;
+        padding: 8px 20px;
+        border-radius: 20px;
+        letter-spacing: 0.02em;
+        transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .teaser-face-back:hover .teaser-subscribe-btn {
+        background: #f06a48;
+        transform: translateY(-1px);
+    }
+
+    .blood-sworn-teaser .teaser-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        line-height: 1.25;
+        text-align: center;
+    }
+
+    .blood-sworn-teaser .teaser-text strong {
+        font-size: 0.85rem;
+        color: var(--text-light);
+    }
+
+    .blood-sworn-teaser .teaser-text strong.teaser-title-lg {
+        font-size: 1.05rem;
+    }
+
+    .blood-sworn-teaser .teaser-text span {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+    }
+
+    .blood-sworn-teaser i {
+        font-size: 1.3rem;
+        flex-shrink: 0;
+        color: var(--text-muted);
+    }
+
+    /* --- FOMO state: this map has Blood Sworn content the viewer doesn't have --- */
+    .blood-sworn-teaser.teaser-available {
+        border-color: rgba(169, 127, 224, 0.4);
+        cursor: pointer;
+        animation: bloodSwornGlow 2.4s ease-in-out infinite;
+    }
+
+    .blood-sworn-teaser.teaser-available::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -60%;
+        width: 40%;
+        height: 100%;
+        background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+        animation: bloodSwornSweep 2.8s ease-in-out infinite;
+        pointer-events: none;
+    }
+
+    .blood-sworn-teaser.teaser-available i,
+    .blood-sworn-teaser.teaser-available .teaser-text strong {
+        color: #a97fe0;
+    }
+
+    .blood-sworn-teaser.teaser-available .teaser-text span {
+        color: rgba(169, 127, 224, 0.65);
+    }
+
+    .blood-sworn-teaser.teaser-available i {
+        animation: bloodSwornIconPulse 2.4s ease-in-out infinite;
+    }
+
+    .blood-sworn-teaser.teaser-available:hover {
+        animation-play-state: paused;
+    }
+
+    .blood-sworn-teaser.teaser-available:hover::before {
+        opacity: 0;
+    }
+
+    .blood-sworn-teaser.teaser-available:hover .teaser-flip-inner {
+        transform: rotateY(180deg);
+    }
+
+    .blood-sworn-teaser.teaser-available .teaser-face-back {
+        display: flex;
+    }
+
+    .blood-sworn-teaser.teaser-available .teaser-subscribe-btn {
+        background: #a97fe0;
+    }
+
+    .blood-sworn-teaser.teaser-available .teaser-face-back:hover .teaser-subscribe-btn {
+        background: #bd97ea;
+    }
+
+    @keyframes bloodSwornSweep {
+        0% { left: -60%; }
+        55% { left: 130%; }
+        100% { left: 130%; }
+    }
+
+    @keyframes bloodSwornGlow {
+        0%, 100% { box-shadow: 0 0 6px rgba(169,127,224,0.12); border-color: rgba(169,127,224,0.3); }
+        50% { box-shadow: 0 0 16px rgba(169,127,224,0.35); border-color: rgba(169,127,224,0.65); }
+    }
+
+    @keyframes bloodSwornIconPulse {
+        0%, 100% { text-shadow: 0 0 4px rgba(169,127,224,0.3); }
+        50% { text-shadow: 0 0 12px rgba(169,127,224,0.9); }
+    }
+
+    /* --- Confirmation state: viewer already has everything this map offers --- */
+    .blood-sworn-teaser.teaser-unlocked {
+        border-color: rgba(90, 200, 130, 0.4);
+    }
+
+    .blood-sworn-teaser.teaser-unlocked i,
+    .blood-sworn-teaser.teaser-unlocked .teaser-text strong {
+        color: #6fcf8e;
+    }
+
+    .blood-sworn-teaser.teaser-unlocked .teaser-text span {
+        color: rgba(111, 207, 142, 0.65);
+    }
+
+    /* --- Upsell state: viewer isn't subscribed at all --- */
+    .blood-sworn-teaser.teaser-locked {
+        border-color: rgba(226, 89, 58, 0.35);
+        animation: teaserLockedPulse 3.2s ease-in-out infinite;
+    }
+
+    .blood-sworn-teaser.teaser-locked i,
+    .blood-sworn-teaser.teaser-locked .teaser-text strong {
+        color: #e2593a;
+    }
+
+    .blood-sworn-teaser.teaser-locked .teaser-text span {
+        color: rgba(226, 89, 58, 0.6);
+    }
+
+    @keyframes teaserLockedPulse {
+        0%, 100% { box-shadow: 0 0 4px rgba(226,89,58,0.08); border-color: rgba(226,89,58,0.28); }
+        50% { box-shadow: 0 0 9px rgba(226,89,58,0.18); border-color: rgba(226,89,58,0.48); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .blood-sworn-teaser,
+        .blood-sworn-teaser::before,
+        .blood-sworn-teaser i {
+            animation: none !important;
+        }
+    }
+
+    /* ===================================================== */
+    /* --- AUTH OVERLAY --- */
+    /* ===================================================== */
+
+    .auth-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 10px;
+        background: rgba(10,7,5,0.92);
+        border: 1px solid rgba(255,255,255,0.06);
+        backdrop-filter: blur(4px);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        transition: opacity 0.3s;
+    }
+
+    .auth-overlay.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .auth-overlay h3 {
+        color: var(--accent);
+        font-size: 1.6rem;
+        margin: 0;
+        text-shadow: none;
+    }
+
+    .auth-overlay p {
+        color: #d7c6a6;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    /* ===================================================== */
+    /* --- SHOWCASE MODE (FANTASY 3-WINDOW) --- */
+    /* ===================================================== */
+    
+    /* Hide all special elements by default */
+    .map-desc, .hero-deploy-label, .wip-overlay, .wip-progress-box, .pop-deploy-label {
+        display: none;
+    }
+
+    .map-grid.showcase-mode {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important; /* Perfect even spacing! */
+        gap: 35px !important;
+        align-items: stretch !important;
+    }
+
+    .map-grid.showcase-mode .map-card {
+    display: none; /* Hidden until JS assigns a slot */
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: linear-gradient(to bottom, #2b1d14, #140d0a) !important;
+
+    border: 2px solid #8b5a2b !important;
+    border-radius: 8px !important;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.8),
+        inset 0 0 20px rgba(0,0,0,0.5) !important;
+
+    padding: 20px !important;
+
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.28s ease,
+        box-shadow 0.28s ease,
+        border-color 0.28s ease,
+        opacity 0.35s ease !important;
+}
+
+    /* Fixing the overlay bug: Force reset the old hover shine specifically for showcase cards */
+    .map-grid.showcase-mode .map-card::before {
+        content: "" !important;
+        position: absolute !important;
+        top: 6px !important; left: 6px !important; right: 6px !important; bottom: 6px !important;
+        width: auto !important; height: auto !important;
+        background: transparent !important;
+        border: 1px solid rgba(212, 175, 55, 0.2) !important;
+        border-radius: 4px !important;
+        pointer-events: none !important;
+        z-index: 10 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .map-grid.showcase-mode .map-card:hover {
+    border-color: #ffd700 !important;
+    transform: translateY(-8px) scale(1.045);
+    box-shadow:
+        0 18px 45px rgba(0,0,0,0.95),
+        0 0 35px rgba(255, 215, 0, 0.25) !important;
+}
+
+    /* Common Typography */
+    .map-grid.showcase-mode .map-title {
+        color: #ffd700;
+        font-size: 1.4rem;
+        margin-top: 15px;
+        text-shadow: 0 2px 4px #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .map-grid.showcase-mode .map-desc {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        height: 5.6em;
+        color: #d7c6a6;
+        font-size: 0.95rem;
+        line-height: 1.4;
+        margin: 10px 0 20px 0;
+        font-style: italic;
+    }
+
+    /* ========================= */
+    /* LEFT WINDOW: HERO LATEST  */
+    /* ========================= */
+    .map-card.featured-hero {
+    display: flex !important;
+    grid-column: 1 / 2 !important;
+    grid-row: 1 !important;
+    background: linear-gradient(to bottom, #3a261a, #1a110d) !important;
+    border-color: #d4af37 !important;
+}
+    .map-card.featured-hero .img-container { height: 260px !important; }
+    .map-card.featured-hero .map-title::before {
+        content: "★ LATEST VAULT MASTERPIECE ★";
+        color: #d4af37;
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+        opacity: 0.8;
+        display: block;
+    }
+    .map-card.featured-hero .hero-deploy-label {
+        display: block;
+        text-align: center;
+        color: #ffd700;
+        font-weight: bold;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        padding: 12px;
+        border: 1px solid rgba(255, 215, 0, 0.5);
+        background: rgba(212, 175, 55, 0.1);
+        border-radius: 4px;
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        box-shadow: inset 0 0 15px rgba(255, 215, 0, 0.1);
+        margin-top: auto;
+    }
+
+    /* ========================= */
+    /* MIDDLE WINDOW: WIP LOCKED */
+    /* ========================= */
+    .map-card.featured-wip {
+    display: flex !important;
+    grid-column: 2 / 3 !important;
+    grid-row: 1 !important;
+    pointer-events: none !important;
+    opacity: 0.9;
+}
+    /* ---> ADD THIS NEW BLOCK TO CONTROL THE CONTAINER HEIGHT <--- */
+    .map-card.featured-wip .img-container { 
+        height: 200px !important; /* Matches the Left and Right cards */
+    }
+
+    /* Your existing blur and overlay code: */
+    .map-card.featured-wip .img-container img { filter: blur(3px) grayscale(60%); }
+    .map-card.featured-wip .wip-overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.6);
+        color: #ffd700;
+        text-align: center;
+        z-index: 5;
+    }
+    .map-card.featured-wip .wip-overlay i {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        text-shadow: 0 0 15px #000;
+    }
+    .map-card.featured-wip .wip-title { font-size: 0.85rem; letter-spacing: 2px; }
+    .map-card.featured-wip .wip-title span {
+        font-size: 1.3rem;
+        font-family: 'Palatino Linotype', serif;
+        color: var(--text-light);
+    }
+    .map-card.featured-wip .map-title,
+    .map-card.featured-wip .map-desc {
+        display: none !important;
+    }
+    .map-card.featured-wip .wip-progress-box { display: block; margin-top: auto; }
+    .wip-status {
+        color: #a88a68;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+    .wip-bar {
+        width: 100%;
+        height: 6px;
+        background: #1a110d;
+        border: 1px solid #5d4037;
+        border-radius: 3px;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+    .wip-fill {
+    height: 100%;
+    background:
+        linear-gradient(
+            90deg,
+            #8b5a2b 0%,
+            #d4af37 20%,
+            #fff2a8 45%,
+            #d4af37 70%,
+            #8b5a2b 100%
+        );
+
+    background-size: 250% 100%;
+
+    box-shadow:
+        0 0 8px #d4af37,
+        0 0 16px rgba(255,215,0,0.5);
+
+    animation: wipShine 2.2s linear infinite;
+}
+@keyframes wipShine {
+    0% {
+        background-position: 200% 0;
+        filter: brightness(0.95);
+    }
+
+    50% {
+        filter: brightness(1.2);
+    }
+
+    100% {
+        background-position: -200% 0;
+        filter: brightness(0.95);
+    }
+}
+    .wip-unlock-label {
+        text-align: center;
+        color: #8b5a2b;
+        font-size: 1.1rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 10px;
+        border: 1px solid #5d4037;
+        background: rgba(0,0,0,0.3);
+        border-radius: 4px;
+    }
+
+    /* ========================= */
+    /* RIGHT WINDOW: POPULAR     */
+    /* ========================= */
+    .map-card.featured-popular {
+    display: flex !important;
+    grid-column: 3 / 4 !important;
+    grid-row: 1 !important;
+    background: linear-gradient(to bottom, rgba(139, 90, 43, 0.15), #140d0a) !important;
+    border-color: #a88a68 !important;
+}
+    .map-card.featured-popular .img-container { height: 260px !important; }
+    .map-card.featured-popular .map-title::before {
+        content: "♥ Community Favorite ♥";
+        color: #e0c48c;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        opacity: 0.9;
+        display: block;
+    }
+    .map-card.featured-popular .pop-deploy-label {
+        display: block;
+        text-align: center;
+        color: #ffd700;
+        font-weight: bold;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        padding: 12px;
+        border: 1px solid rgba(255, 215, 0, 0.5);
+        background: rgba(212, 175, 55, 0.1);
+        border-radius: 4px;
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        box-shadow: inset 0 0 15px rgba(255, 215, 0, 0.1);
+        margin-top: auto;
+    }
+	/* ========================================== */
+/* --- HERO & POPULAR TEXT SHINE EFFECT ---   */
+/* ========================================== */
+
+.map-card.featured-hero .map-title,
+.map-card.featured-popular .map-title {
+    /* Create a gold gradient with a harsh white stripe in the middle */
+    background: linear-gradient(
+        110deg,
+        #ffd700 0%,
+        #d4af37 35%,
+        #ffffff 50%,
+        #d4af37 65%,
+        #ffd700 100%
+    );
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: textShine 3s linear infinite;
+    text-shadow: none; /* Strip old shadows so the crisp gradient shows */
+}
+
+/* Ensure the prefix text (★ LATEST ★) stays solid and doesn't turn invisible */
+.map-card.featured-hero .map-title::before,
+.map-card.featured-popular .map-title::before {
+    -webkit-text-fill-color: #d4af37;
+    text-shadow: 0 2px 4px #000;
+}
+
+/* The actual shine movement */
+@keyframes textShine {
+    to {
+        background-position: 200% center;
+    }
+}
+/* ===================================================== */
+    /* --- BUG FIX: HIDE WIP ELEMENTS IN NORMAL VAULT ---    */
+    /* ===================================================== */
+    
+    .map-card:not(.featured-wip) .wip-overlay,
+    .map-card:not(.featured-wip) .wip-summary,
+    .map-card:not(.featured-wip) .wip-features-container,
+    .map-card:not(.featured-wip) .wip-progress-box {
+        display: none !important;
+    }
+	/* ===================================================== */
+    /* --- WIP FEATURES LIST STYLING --- */
+    /* ===================================================== */
+
+    /* Controls the overall box holding the list */
+    .wip-features-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px; /* Increases or decreases the space between each line */
+        margin-top: 15px; /* Space between this list and the description above it */
+        margin-bottom: 15px; /* Space between this list and the progress bar below */
+        color: #ffd700; 
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /* Controls the individual text lines and icons */
+    .wip-feature-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* Space between the FontAwesome icon and the text */
+        line-height: 1.2;
+    }
+
+    /* Target just the icons if you want them a different color or size */
+    .wip-feature-item i {
+        color: #d4af37; /* Slightly darker gold for the icons */
+        font-size: 1.1rem;
+    }
+	/* ========================================== */
+/* --- VARIANT SWITCHER BUTTONS ---           */
+/* ========================================== */
+.variant-selector {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 8px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#tier2-content {
+    margin-top: auto;
+}
+
+.var-btn {
+    flex: 1 1 120px;
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-border);
+    color: var(--text-muted);
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.var-btn:hover {
+    border-color: rgba(212,175,55,0.3);
+    color: var(--text-light);
+    background: var(--panel-bg-alt);
+}
+
+.var-btn.active {
+    background: rgba(212, 175, 55, 0.1);
+    border-color: var(--gold);
+    color: var(--text-light);
+    box-shadow: none;
+}
+
+/* ===================================================== */
+/* --- ACCOUNT DASHBOARD DIALOG (separate Foundry window,   */
+/* --- outside .cartorium-browser-root, so hex not var()    */
+/* ===================================================== */
+
+/* Stays above the main Cartorium window even if it's accidentally clicked,
+   so linking the account never gets stuck behind the map browser. */
+#cartorium-account-dialog {
+    z-index: 100000 !important;
+}
+
+#cartorium-account-dialog .window-content {
+    background: linear-gradient(to bottom, #17100c 0%, #0c0806 100%);
+    color: #c7bca5;
+}
+
+#cartorium-account-dialog .window-header {
+    background: #100b08;
+    color: #d9ae3e;
+}
+
+.cartorium-dialog-body {
+    padding: 12px 4px 4px;
+    text-align: center;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.cartorium-dialog-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ece3d6;
+    margin-bottom: 6px;
+}
+
+.cartorium-dialog-status .status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.cartorium-dialog-tier {
+    color: #a89a88;
+    font-size: 0.9rem;
+    margin-bottom: 14px;
+}
+
+.cartorium-dialog-tier strong {
+    color: #d9ae3e;
+}
+
+.cartorium-dialog-divider {
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    margin: 14px 0;
+}
+
+.cartorium-dialog-input {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 10px;
+    background: #17110d;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 6px;
+    color: #c7bca5;
+    font-family: inherit;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+}
+
+.cartorium-dialog-input:focus {
+    outline: none;
+    border-color: #d9ae3e;
+}
+
+.cartorium-dialog-input::placeholder {
+    color: #6f6558;
+}
+
+#cartorium-account-dialog .dialog-buttons {
+    background: #100b08;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+#cartorium-account-dialog .dialog-buttons button {
+    background: #201812;
+    border: 1px solid rgba(212,175,55,0.35);
+    color: #c7bca5;
+    border-radius: 6px;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    transition: all 0.2s ease;
+}
+
+#cartorium-account-dialog .dialog-buttons button:hover {
+    background: #2a1f17;
+    border-color: #d4af37;
+    color: #fff;
+}
+
+#cartorium-account-dialog .dialog-buttons button.unlock,
+#cartorium-account-dialog .dialog-buttons button[data-button="unlock"] {
+    background: #d9ae3e;
+    border: none;
+    color: #1a0f06;
+    font-weight: 700;
+}
+
+#cartorium-account-dialog .dialog-buttons button.unlock:hover,
+#cartorium-account-dialog .dialog-buttons button[data-button="unlock"]:hover {
+    background: #e8c257;
+    color: #1a0f06;
+}
+</style>
+
+<section class="cartorium-browser-root">
+    <div class="patreon-status-bar">
+        <div class="system-status">
+            <img src="modules/cartorium-browser/assets/C_logo.png" class="main-logo" alt="Cartorium Logo">
+            <div class="status-dot"></div>
+            Cartorium 
+        </div>
+
+        <div class="header-buttons">
+            <a href="https://www.patreon.com/Cartorium/membership" target="_blank" class="action-btn subscribe-btn">
+                Subscribe
+            </a>
+            
+            <button type="button" class="patreon-btn open-dashboard-btn">
+                <i class="fas fa-gem"></i> Link Patreon
+            </button>
+        </div>
+    </div>
+
+    <div class="view-container grid-view">
+        <nav class="archive-tabs">
+            <button type="button" class="tab-btn active" data-tab="featured">
+                ★ Featured
+            </button>
+            <button type="button" class="tab-btn" data-tab="all">
+                Map Vault
+            </button>
+        </nav>
+
+        <div class="map-grid">
+            {{#each maps}}
+            <div class="map-card open-detail-btn" data-id="{{this.id}}" data-status="{{this.status}}">
+                
+                <div class="img-container">
+                    <img src="{{this.thumb}}" onerror="this.style.display='none'">
+                    
+                    <div class="wip-overlay">
+                        <i class="fas fa-lock"></i>
+                        <div class="wip-title">NEXT UNLOCK<br><span>{{this.name}}</span></div>
+                    </div>
+                </div>
+
+                <div class="map-info">
+    <div class="map-title">{{this.name}}</div>
+    <div class="map-desc">{{this.description}}</div>
+    
+    <div class="wip-summary" style="display:none; color:#d8c6a7; font-style:italic; margin-top:5px; text-align:center;"></div>
+    <div class="wip-features-container"></div>
+    
+    <div class="hero-deploy-label">DEPLOY SCENE</div>
+
+    <div class="wip-progress-box">
+        <div class="wip-status">
+            Status: Construction {{this.progress}}% <i class="fas fa-hammer"></i>
+        </div>
+        <div class="wip-bar">
+            <div class="wip-fill" style="width: {{this.progress}}%;"></div>
+        </div>
+        <div class="wip-unlock-label">Next Cartorium Map</div>
+    </div>
+
+    <div class="pop-deploy-label">DEPLOY SCENE</div>
+</div>
+
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="view-container detail-view">
+        <div class="detail-header">
+            <h2 id="detail-title" style="flex:1; margin:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">
+                Map Title
+            </h2>
+            <button class="action-btn close-detail-btn" style="width:140px; margin-left:20px; flex-shrink:0;">
+                <i class="fas fa-arrow-left"></i> Back
+            </button>
+        </div>
+
+        <div class="detail-layout">
+            <div class="detail-left">
+    <div class="detail-image-box">
+        <img id="detail-main-img" src="" alt="Preview">
+        <img id="detail-main-img-fade" class="detail-image-fade-layer" src="" alt="">
+        <span class="pan-hint"><i class="fas fa-play"></i></span>
+        <span class="zoom-toggle-btn" title="Zoom"><i class="fas fa-search-plus"></i></span>
+        <div class="zoom-lens"></div>
+    </div>
+
+    <div class="membership-showcase">
+                    <div id="membership-card" class="membership-card bronze-tier">
+                        <div class="membership-left">
+                            <div class="membership-icon">
+                                <img id="membership-image" src="modules/cartorium-browser/assets/bronze-tier.webp">
+                            </div>
+                            <div class="membership-info">
+                                <div class="membership-label">Patreon Tier</div>
+                                <div id="membership-name" class="membership-name">Free Member</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="blood-sworn-teaser" class="blood-sworn-teaser">
+                        <div class="teaser-flip-inner">
+                            <div class="teaser-face teaser-face-front">
+                                <i id="teaser-icon" class="fas fa-scroll"></i>
+                                <div class="teaser-text">
+                                    <strong id="teaser-title">Blood Sworn content available</strong>
+                                    <span id="teaser-sub">PDF, Tokens &amp; more</span>
+                                </div>
+                            </div>
+                            <a href="https://www.patreon.com/Cartorium/membership" target="_blank" class="teaser-face teaser-face-back">
+                                <span id="teaser-cta" class="teaser-subscribe-btn">Subscribe Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+</div>
+
+            <div class="detail-right">
+                <div class="lore-box" id="detail-description"></div>
+
+                <div id="variant-selector" class="variant-selector"></div>
+
+<div id="tier2-content"></div>
+
+                <div id="detail-auth-overlay" class="auth-overlay">
+                    <h3>Vault Locked</h3>
+                    <p>Link Patreon to unlock the Cartorium archives.</p>
+                    <button class="patreon-btn auth-prompt-btn">
+                        <i class="fab fa-patreon"></i> LINK PATREON
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
