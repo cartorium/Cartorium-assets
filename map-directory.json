@@ -647,7 +647,11 @@
         "Faction Conflict",
         "Intrigue"
       ],
-      "dateAdded": "2026-08-04"
+      "dateAdded": "2026-08-04",
+      "localModulePrefix": "modules/prison-camp/",
+      "premiumFolders": [
+        "SFX/"
+      ]
     },
     {
       "id": "The-Riftwatch-Monument",
