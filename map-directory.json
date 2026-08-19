@@ -428,6 +428,96 @@
           "image": "Fleshworks Variant1.jpg"
         }
       ]
+    },
+    {
+      "id": "Devils-Bargain",
+      "name": "Devils Bargain",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/CARTORIUM%20THUMBNAILS%20%26%20PREVIEWS/Devils-Bargain_thumb.webp",
+      "description": "Rumors of a shop exist. A shop with the best deals, a shop with the best stock, tucked somewhere it shouldn't be. The catch? It doesn't take gold. Only the devil behind the counter knows the price, and he never quotes it twice.\n\nGM Hooks\n\n• The Tip: A desperate stranger swears the shop is real, and swears they know how to find it.\n• The Price: The item the party needs is here, but the cost isn't measured in coin.\n• The Buyback: A deal was signed that shouldn't have been. Undoing it may cost more than making it did.\n\nEverything in this shop is for sale, including sometimes the buyer. Read the fine print, if you can find it.",
+      "premiumJson": "Devils Bargain.json",
+      "premiumImage": "Devils Bargain.jpg",
+      "pdfUrl": "",
+      "tokens": "",
+      "variants": [
+        {
+          "name": "",
+          "thumb": "",
+          "json": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "Farmhouse",
+      "name": "Farmhouse",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/CARTORIUM%20THUMBNAILS%20%26%20PREVIEWS/Farmhouse_thumb.webp",
+      "description": "Just your classic creepy, abandoned homestead, right? Don't let the rotting floorboards fool you. Hidden beneath this muddy farmhouse and cluttered barn is a haunting stone dungeon packed with glowing arcane labs, tight corridors, and suspicious holding cells.\n\nLet's just say whoever lived up top was into some seriously dark extracurriculars in the basement.\n\nGM Hooks\n\n• The Disappearances: A string of vanishings from a nearby town all trace back to this address.\n• The Labs: Something down there is still glowing, and whoever built it left in a hurry.\n• The Cells: There's still someone, or something, locked below. Whether that's a rescue or a mistake is up to the party.\n\nBring a lantern. The dark down there doesn't like visitors.",
+      "premiumJson": "Farmhouse.json",
+      "premiumImage": "Farmhouse.jpg",
+      "pdfUrl": "",
+      "tokens": "",
+      "variants": [
+        {
+          "name": "",
+          "thumb": "",
+          "json": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "Prison-Camp",
+      "name": "Prison Camp",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/CARTORIUM%20THUMBNAILS%20%26%20PREVIEWS/Prison-Camp_thumb.webp",
+      "description": "Caught between the relentless, deafening scream of the sawmill and the back-breaking stone quarry, the camp exists to grind both bone and spirit into dust. Here, you don't serve a sentence; you swing a pickaxe or haul timber until the mountain or the mill finally claims you.\n\nGM Hooks\n\n• The Breakout: A name is coming up on the wrong list, and there isn't much time left to act.\n• The Sentence: The party themselves have been thrown in on a charge they didn't earn.\n• The Infiltration: New guards are being brought in this week. Nobody's checking papers too closely yet.\n\nThe mountain always takes its due.",
+      "premiumJson": "Prison Camp.json",
+      "premiumImage": "Prison Camp.jpg",
+      "pdfUrl": "",
+      "tokens": "",
+      "variants": [
+        {
+          "name": "",
+          "thumb": "",
+          "json": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "The-Riftwatch-Monument",
+      "name": "The Riftwatch Monument",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/CARTORIUM%20THUMBNAILS%20%26%20PREVIEWS/The-Riftwatch-Monument_thumb.webp",
+      "description": "The Riftwatch Monument serves as a solemn vigil and a rugged sanctuary for weary travelers. The camp is a gathering of reinforced canvas and scavenged stone fortifications, humming faintly with the low vibration of the nearby anomaly: the Colossal Titan.\n\nThey say its head is filled with treasure. Maybe we can get inside its ear?\n\nGM Hooks\n\n• The Excavation: Something inside the Titan's skull is rattling loose, and it's worth a fortune to whoever gets there first.\n• The Outpost: The anomaly is drawing closer, and the camp needs to hold if anyone's getting out.\n• The Watchers: The ancient dwarven sentries are still standing guard, centuries after their orders should have expired.\n\nRiftwatch has never stopped humming. Nobody's figured out why yet.",
+      "premiumJson": "Riftwatch.json",
+      "premiumImage": "The Rifwatch Monument.jpg",
+      "pdfUrl": "",
+      "tokens": "",
+      "variants": [
+        {
+          "name": "",
+          "thumb": "",
+          "json": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "Shadow-Market",
+      "name": "Shadow Market",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/CARTORIUM%20THUMBNAILS%20%26%20PREVIEWS/Shadow-Market_thumb.webp",
+      "description": "Keep your coin close and your shadow closer. The Shadow Market unfolds after dark in the dampest corners of the city, and it's never quite in the same place twice.\n\nGM Hooks\n\n• The Screams: A jar of bottled screams is for sale. Someone recognizes the voice.\n• The Grave Map: A vendor is selling directions to a grave that, as far as anyone knows, hasn't been dug yet.\n• The Trade: One of the party needs to lose something, a memory, a curse, a debt, and there's a vendor here who deals in exactly that.\n\nJust don't ask where the \"fresh\" meat comes from. Some bargains are better left unexplained.",
+      "premiumJson": "The Shadow Market.json",
+      "premiumImage": "Shadow Market.jpg",
+      "pdfUrl": "",
+      "tokens": "",
+      "variants": [
+        {
+          "name": "",
+          "thumb": "",
+          "json": "",
+          "image": ""
+        }
+      ]
     }
   ]
 }
