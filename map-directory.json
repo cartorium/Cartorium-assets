@@ -706,10 +706,10 @@
     {
       "id": "Pilgrimage",
       "name": "Pilgrimage",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/CARTORIUM%20THUMBNAILS%20%26%20PREVIEWS/Pilgrimage_thumb.webp",
+      "thumb": "",
       "description": "",
       "premiumJson": "Pilgrimage.json",
-      "premiumImage": "Pilgrimage.jpg",
+      "premiumImage": "The Pilgrimage Of Silvanus no doors (1).jpg",
       "pdfUrl": "",
       "tokens": "Pilgrimage tokens.json",
       "localModulePrefix": "modules/Pilgrimage/Assets/",
