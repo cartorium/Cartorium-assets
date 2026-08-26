@@ -4,9 +4,9 @@
       "id": "Pilgrimage"
     },
     "wip": {
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Forest%20Labyrinth%20prev.png",
-      "progress": 100,
-      "summary": "A Forest Labyrinth deep beneath a towering canopy, down in the darkwoods, Puzzles, Traps and more",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/magicschoolprev.png",
+      "progress": 40,
+      "summary": "An Ancient Ruined Magic School Deep Beneath the Labyrinth",
       "features": [
         {
           "icon": "fa-skull-crossbones",
@@ -14,7 +14,7 @@
         },
         {
           "icon": "fa-ghost",
-          "label": "Something's not right with this part of the forest"
+          "label": "Something's not right with this place"
         },
         {
           "icon": "fa-dungeon",
