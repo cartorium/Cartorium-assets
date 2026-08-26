@@ -436,7 +436,7 @@
       "premiumJson": "Red Dragon Keep.json",
       "premiumImage": "Red Dragon Keep.jpg",
       "pdfUrl": "",
-      "tokens": "Red Dragon Keep tokens.json",
+      "tokens": "",
       "variants": [
         {
           "name": "",
@@ -707,12 +707,12 @@
       "id": "Pilgrimage",
       "name": "Pilgrimage",
       "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/CARTORIUM%20THUMBNAILS%20%26%20PREVIEWS/Pilgrimage.webp",
-      "description": "",
+      "description": "Acolytes once proved their devotion to Silvanus by walking this living labyrinth and earning its blessing. Something in the maze has gone wrong since, and whatever answers the door now isn't handing out blessings anymore.",
       "premiumJson": "Pilgrimage.json",
       "premiumImage": "The Pilgrimage Of Silvanus no doors (1).jpg",
       "pdfUrl": "",
       "tokens": "Pilgrimage tokens.json",
-      "localModulePrefix": "modules/Pilgrimage/Assets/",
+      "localModulePrefix": "modules/Pilgrimage/",
       "variants": [
         {
           "name": "",
