@@ -1,7 +1,7 @@
 {
   "showcase": {
     "latest": {
-      "id": "Prison-Camp"
+      "id": "Pilgrimage"
     },
     "wip": {
       "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/Forest%20Labyrinth%20prev.png",
@@ -27,7 +27,7 @@
       ]
     },
     "popular": {
-      "id": "Hunters-Guild-Hall"
+      "id": "Prison-Camp"
     }
   },
   "maps": [
@@ -706,7 +706,7 @@
     {
       "id": "Pilgrimage",
       "name": "Pilgrimage",
-      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/CARTORIUM%20THUMBNAILS%20%26%20PREVIEWS/Pilgrimage_thumb.webp",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/CARTORIUM%20THUMBNAILS%20%26%20PREVIEWS/Pilgrimage.webp",
       "description": "Acolytes once proved their devotion to Silvanus by walking this living labyrinth and earning its blessing. Something in the maze has gone wrong since, and whatever answers the door now isn't handing out blessings anymore.",
       "premiumJson": "Pilgrimage.json",
       "premiumImage": "The Pilgrimage Of Silvanus no doors (1).jpg",
