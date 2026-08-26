@@ -702,6 +702,25 @@
         "Intrigue"
       ],
       "dateAdded": "2026-03-20"
+    },
+    {
+      "id": "Pilgrimage",
+      "name": "Pilgrimage",
+      "thumb": "",
+      "description": "",
+      "premiumJson": "Pilgrimage.json",
+      "premiumImage": "Pilgrimage.jpg",
+      "pdfUrl": "",
+      "tokens": "Pilgrimage tokens.json",
+      "localModulePrefix": "modules/Pilgrimage/Assets/",
+      "variants": [
+        {
+          "name": "",
+          "thumb": "",
+          "json": "",
+          "image": ""
+        }
+      ]
     }
   ]
 }
