@@ -1,8 +1,8 @@
+![Cartorium Map Vault](assets/CartoriumArchiveBanner.png)
+
 # The Cartorium Archive
 
 Cartorium Archive is the new way to get Cartorium content straight into Foundry VTT. Browse every map we've released and install any of them in a single click, no downloading, no file wrangling. Open it from the Cartorium button above the Scenes tab and have a dig through the collection - there's something in there for everyone: a free selection of maps for anyone who installs it!
-
-![Cartorium Map Vault](assets/CartoriumArchiveBanner.png)
 
 ## Features
 
