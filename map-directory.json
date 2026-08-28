@@ -715,10 +715,10 @@
       "localModulePrefix": "modules/Pilgrimage/",
       "variants": [
         {
-          "name": "",
-          "thumb": "",
-          "json": "",
-          "image": ""
+          "name": "Pilgrimage Green Forest",
+          "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/CARTORIUM%20THUMBNAILS%20%26%20PREVIEWS/Pilgrimage-Variant1_thumb.webp",
+          "json": "Pilgrimage.json",
+          "image": "Pilgrimage Variant1.jpg"
         }
       ],
       "tags": [
