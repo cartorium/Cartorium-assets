@@ -1,7 +1,7 @@
 {
   "showcase": {
     "latest": {
-      "id": "Pilgrimage"
+      "id": "Wintersnow-steppe"
     },
     "wip": {
       "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/magicschoolprev.png",
@@ -27,7 +27,7 @@
       ]
     },
     "popular": {
-      "id": "Prison-Camp"
+      "id": "Pilgrimage"
     }
   },
   "maps": [
@@ -729,6 +729,36 @@
         "Beast"
       ],
       "dateAdded": "2026-08-26"
+    },
+    {
+      "id": "Wintersnow-steppe",
+      "name": "Wintersnow Steppe",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/CARTORIUM%20THUMBNAILS%20%26%20PREVIEWS/Wintersnow-Steppe_thumb.webp",
+      "description": "An icy gale blows from a lost sea, a ruined tower stands as your one last hope for survival.\n\nGM Hooks\n\n• The Wreck: A shattered boat lies half-buried in the drifts, and something pulled from its hold has followed the party ashore.\n• The Last Stand: Two warring bands have converged on the field, neither willing to retreat before the storm swallows them both.\n• The Signal: The tower's beacon hasn't gone dark in a hundred years, until tonight.\n\nOut here, the cold doesn't wait for anyone.",
+      "premiumJson": "Wintersnow Steppe.json",
+      "premiumImage": "Wintersnow Steppe.jpg",
+      "pdfUrl": "",
+      "isFree": true,
+      "tokens": "",
+      "localModulePrefix": "modules/Wintersnow-Steppe/",
+      "variants": [
+        {
+          "name": "",
+          "thumb": "",
+          "json": "",
+          "image": ""
+        }
+      ],
+      "tags": [
+        "Winter",
+        "Snow",
+        "Boat",
+        "Battle",
+        "Cold",
+        "Ice",
+        "Field"
+      ],
+      "dateAdded": "2026-09-08"
     }
   ]
 }
