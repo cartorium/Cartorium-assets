@@ -1,7 +1,7 @@
 {
   "showcase": {
     "latest": {
-      "id": "Wintersnow-steppe"
+      "id": "Fishing-Guild"
     },
     "wip": {
       "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/magicschoolprev.png",
@@ -27,7 +27,7 @@
       ]
     },
     "popular": {
-      "id": "Pilgrimage"
+      "id": "Wintersnow-steppe"
     }
   },
   "maps": [
@@ -759,6 +759,32 @@
         "Field"
       ],
       "dateAdded": "2026-09-08"
+    },
+    {
+      "id": "Fishing-Guild",
+      "name": "Fishing Guild",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/CARTORIUM%20THUMBNAILS%20%26%20PREVIEWS/Fishing-Guild_thumb.webp",
+      "description": "The Fisher King's Guild is a social hub built entirely on status, and the only currency that matters is fish. There's no correct order to move through it and no wrong door to walk through, just one rule everyone takes dead seriously: if you want in, you'd better have caught something good.\n\nGM Hooks\n\n• The Contact: Somebody the party needs is a Guild member, and members are only ever found here.\n• The Boat: They need passage, and the Guild controls every hull worth sailing on this stretch of coast.\n• The Catch: They've pulled something out of the water they can't identify, and the only ones who could tell them won't speak to non-members.\n\nStatus here isn't bought. It's caught.",
+      "premiumJson": "Fishing Guild.json",
+      "premiumImage": "Fishing guild no doors.jpg",
+      "pdfUrl": "",
+      "tokens": "Fishing Guild tokens.json",
+      "localModulePrefix": "modules/Fishing Guild/",
+      "variants": [
+        {
+          "name": "Fishing Guild (Rainy Night)",
+          "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/CARTORIUM%20THUMBNAILS%20%26%20PREVIEWS/Fishing-Guild-Variant1_thumb.webp",
+          "json": "Fishing Guild Variant.json",
+          "image": "Fishing guild Variant.jpg"
+        }
+      ],
+      "tags": [
+        "Urban",
+        "Market/Shop",
+        "Water",
+        "Intrigue"
+      ],
+      "dateAdded": "2026-09-15"
     }
   ]
 }
