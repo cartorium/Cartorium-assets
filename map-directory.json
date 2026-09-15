@@ -769,7 +769,7 @@
       "premiumImage": "Fishing guild no doors.jpg",
       "pdfUrl": "",
       "tokens": "Fishing Guild tokens.json",
-      "localModulePrefix": "modules/Fishing Guild/",
+      "localModulePrefix": "modules/Fishing%20Guild/",
       "variants": [
         {
           "name": "Fishing Guild (Rainy Night)",
