@@ -1,7 +1,7 @@
 {
   "showcase": {
     "latest": {
-      "id": "Fishing-Guild"
+      "id": "Crystal-tower"
     },
     "wip": {
       "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/magicschoolprev.png",
@@ -27,7 +27,7 @@
       ]
     },
     "popular": {
-      "id": "Wintersnow-steppe"
+      "id": "Fishing-Guild"
     }
   },
   "maps": [
@@ -785,6 +785,32 @@
         "Intrigue"
       ],
       "dateAdded": "2026-09-15"
+    },
+    {
+      "id": "Crystal-tower",
+      "name": "Crystal Tower",
+      "thumb": "https://raw.githubusercontent.com/cartorium/Cartorium-assets/main/CARTORIUM%20THUMBNAILS%20%26%20PREVIEWS/Crystal-Tower_thumb.webp",
+      "description": "Hidden by magic deep in the Highwood sits a beautiful crystal tower, owned by a marvelous wizard who is said to have the power to bring people back from the dead.\n\nGM Hooks\n\n• The Resurrection: Someone the party lost is worth bringing back, and this wizard is the only one rumoured to be able to do it.\n• The Price: Nobody will say what the wizard asks in return, and the ones who paid it have stopped talking.\n• The Pilgrims: Others made the trek through the Highwood before the party did, and not all of them came home.\n\nEvery bargain with death has a price.",
+      "premiumJson": "Crystal Tower.json",
+      "premiumImage": "Crystal Tower Revamp.jpg",
+      "pdfUrl": "",
+      "isFree": true,
+      "tokens": "",
+      "localModulePrefix": "modules/Crystal-tower/",
+      "variants": [
+        {
+          "name": "",
+          "thumb": "",
+          "json": "",
+          "image": ""
+        }
+      ],
+      "tags": [
+        "Forest",
+        "Keep/Fortress",
+        "Mystery"
+      ],
+      "dateAdded": "2026-10-07"
     }
   ]
 }
